@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMoveCabang" targetNamespace="http://tempuri.org/DataSetMoveCabang.xsd" xmlns:mstns="http://tempuri.org/DataSetMoveCabang.xsd" xmlns="http://tempuri.org/DataSetMoveCabang.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMoveCabang" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMoveCabang" msprop:Generator_UserDSName="DataSetMoveCabang">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMoveCabang" msprop:Generator_TableClassName="dtMoveCabangDataTable" msprop:Generator_TableVarName="tabledtMoveCabang" msprop:Generator_TablePropName="dtMoveCabang" msprop:Generator_RowDeletingName="dtMoveCabangRowDeleting" msprop:Generator_RowChangingName="dtMoveCabangRowChanging" msprop:Generator_RowEvHandlerName="dtMoveCabangRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMoveCabangRowDeleted" msprop:Generator_UserTableName="dtMoveCabang" msprop:Generator_RowChangedName="dtMoveCabangRowChanged" msprop:Generator_RowEvArgName="dtMoveCabangRowChangeEvent" msprop:Generator_RowClassName="dtMoveCabangRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodetoko" msprop:Generator_ColumnVarNameInTable="columnkodetoko" msprop:Generator_ColumnPropNameInRow="kodetoko" msprop:Generator_ColumnPropNameInTable="kodetokoColumn" msprop:Generator_UserColumnName="kodetoko" type="xs:string" minOccurs="0" />
+              <xs:element name="namatoko" msprop:Generator_ColumnVarNameInTable="columnnamatoko" msprop:Generator_ColumnPropNameInRow="namatoko" msprop:Generator_ColumnPropNameInTable="namatokoColumn" msprop:Generator_UserColumnName="namatoko" type="xs:string" minOccurs="0" />
+              <xs:element name="Ttl_SAW_qty" msprop:Generator_ColumnVarNameInTable="columnTtl_SAW_qty" msprop:Generator_ColumnPropNameInRow="Ttl_SAW_qty" msprop:Generator_ColumnPropNameInTable="Ttl_SAW_qtyColumn" msprop:Generator_UserColumnName="Ttl_SAW_qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Ttl_SAW_value" msprop:Generator_ColumnVarNameInTable="columnTtl_SAW_value" msprop:Generator_ColumnPropNameInRow="Ttl_SAW_value" msprop:Generator_ColumnPropNameInTable="Ttl_SAW_valueColumn" msprop:Generator_UserColumnName="Ttl_SAW_value" type="xs:string" minOccurs="0" />
+              <xs:element name="Ttl_Receipt_qty" msprop:Generator_ColumnVarNameInTable="columnTtl_Receipt_qty" msprop:Generator_ColumnPropNameInRow="Ttl_Receipt_qty" msprop:Generator_ColumnPropNameInTable="Ttl_Receipt_qtyColumn" msprop:Generator_UserColumnName="Ttl_Receipt_qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Ttl_Receipt_value" msprop:Generator_ColumnVarNameInTable="columnTtl_Receipt_value" msprop:Generator_ColumnPropNameInRow="Ttl_Receipt_value" msprop:Generator_ColumnPropNameInTable="Ttl_Receipt_valueColumn" msprop:Generator_UserColumnName="Ttl_Receipt_value" type="xs:string" minOccurs="0" />
+              <xs:element name="RTS_Qty" msprop:Generator_ColumnVarNameInTable="columnRTS_Qty" msprop:Generator_ColumnPropNameInRow="RTS_Qty" msprop:Generator_ColumnPropNameInTable="RTS_QtyColumn" msprop:Generator_UserColumnName="RTS_Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="RTS_Value" msprop:Generator_ColumnVarNameInTable="columnRTS_Value" msprop:Generator_ColumnPropNameInRow="RTS_Value" msprop:Generator_ColumnPropNameInTable="RTS_ValueColumn" msprop:Generator_UserColumnName="RTS_Value" type="xs:string" minOccurs="0" />
+              <xs:element name="SLS_Qty" msprop:Generator_ColumnVarNameInTable="columnSLS_Qty" msprop:Generator_ColumnPropNameInRow="SLS_Qty" msprop:Generator_ColumnPropNameInTable="SLS_QtyColumn" msprop:Generator_UserColumnName="SLS_Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="SLS_Value" msprop:Generator_ColumnVarNameInTable="columnSLS_Value" msprop:Generator_ColumnPropNameInRow="SLS_Value" msprop:Generator_ColumnPropNameInTable="SLS_ValueColumn" msprop:Generator_UserColumnName="SLS_Value" type="xs:string" minOccurs="0" />
+              <xs:element name="RTRDC_Qty" msprop:Generator_ColumnVarNameInTable="columnRTRDC_Qty" msprop:Generator_ColumnPropNameInRow="RTRDC_Qty" msprop:Generator_ColumnPropNameInTable="RTRDC_QtyColumn" msprop:Generator_UserColumnName="RTRDC_Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="RTRDC_Value" msprop:Generator_ColumnVarNameInTable="columnRTRDC_Value" msprop:Generator_ColumnPropNameInRow="RTRDC_Value" msprop:Generator_ColumnPropNameInTable="RTRDC_ValueColumn" msprop:Generator_UserColumnName="RTRDC_Value" type="xs:string" minOccurs="0" />
+              <xs:element name="Adj_Qty" msprop:Generator_ColumnVarNameInTable="columnAdj_Qty" msprop:Generator_ColumnPropNameInRow="Adj_Qty" msprop:Generator_ColumnPropNameInTable="Adj_QtyColumn" msprop:Generator_UserColumnName="Adj_Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="Adj_Value" msprop:Generator_ColumnVarNameInTable="columnAdj_Value" msprop:Generator_ColumnPropNameInRow="Adj_Value" msprop:Generator_ColumnPropNameInTable="Adj_ValueColumn" msprop:Generator_UserColumnName="Adj_Value" type="xs:string" minOccurs="0" />
+              <xs:element name="SAK_Qty" msprop:Generator_ColumnVarNameInTable="columnSAK_Qty" msprop:Generator_ColumnPropNameInRow="SAK_Qty" msprop:Generator_ColumnPropNameInTable="SAK_QtyColumn" msprop:Generator_UserColumnName="SAK_Qty" type="xs:string" minOccurs="0" />
+              <xs:element name="SAK_Value" msprop:Generator_ColumnVarNameInTable="columnSAK_Value" msprop:Generator_ColumnPropNameInRow="SAK_Value" msprop:Generator_ColumnPropNameInTable="SAK_ValueColumn" msprop:Generator_UserColumnName="SAK_Value" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMstMaxToko" targetNamespace="http://tempuri.org/DataSetMstMaxToko.xsd" xmlns:mstns="http://tempuri.org/DataSetMstMaxToko.xsd" xmlns="http://tempuri.org/DataSetMstMaxToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMstMaxToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMstMaxToko" msprop:Generator_UserDSName="DataSetMstMaxToko">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetMaxToko" msprop:Generator_TableClassName="DataSetMaxTokoDataTable" msprop:Generator_TableVarName="tableDataSetMaxToko" msprop:Generator_RowChangedName="DataSetMaxTokoRowChanged" msprop:Generator_TablePropName="DataSetMaxToko" msprop:Generator_RowDeletingName="DataSetMaxTokoRowDeleting" msprop:Generator_RowChangingName="DataSetMaxTokoRowChanging" msprop:Generator_RowEvHandlerName="DataSetMaxTokoRowChangeEventHandler" msprop:Generator_RowDeletedName="DataSetMaxTokoRowDeleted" msprop:Generator_RowClassName="DataSetMaxTokoRow" msprop:Generator_UserTableName="DataSetMaxToko" msprop:Generator_RowEvArgName="DataSetMaxTokoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="namaTag" msprop:Generator_ColumnVarNameInTable="columnnamaTag" msprop:Generator_ColumnPropNameInRow="namaTag" msprop:Generator_ColumnPropNameInTable="namaTagColumn" msprop:Generator_UserColumnName="namaTag" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgCost" msprop:Generator_ColumnVarNameInTable="columnAvgCost" msprop:Generator_ColumnPropNameInRow="AvgCost" msprop:Generator_ColumnPropNameInTable="AvgCostColumn" msprop:Generator_UserColumnName="AvgCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesQty3" msprop:Generator_ColumnVarNameInTable="columnSalesQty3" msprop:Generator_ColumnPropNameInRow="SalesQty3" msprop:Generator_ColumnPropNameInTable="SalesQty3Column" msprop:Generator_UserColumnName="SalesQty3" type="xs:long" minOccurs="0" />
+              <xs:element name="SalesQty2" msprop:Generator_ColumnVarNameInTable="columnSalesQty2" msprop:Generator_ColumnPropNameInRow="SalesQty2" msprop:Generator_ColumnPropNameInTable="SalesQty2Column" msprop:Generator_UserColumnName="SalesQty2" type="xs:long" minOccurs="0" />
+              <xs:element name="SalesQty1" msprop:Generator_ColumnVarNameInTable="columnSalesQty1" msprop:Generator_ColumnPropNameInRow="SalesQty1" msprop:Generator_ColumnPropNameInTable="SalesQty1Column" msprop:Generator_UserColumnName="SalesQty1" type="xs:long" minOccurs="0" />
+              <xs:element name="maxStok" msprop:Generator_ColumnVarNameInTable="columnmaxStok" msprop:Generator_ColumnPropNameInRow="maxStok" msprop:Generator_ColumnPropNameInTable="maxStokColumn" msprop:Generator_UserColumnName="maxStok" type="xs:long" minOccurs="0" />
+              <xs:element name="RpMaxAwal" msprop:Generator_ColumnVarNameInTable="columnRpMaxAwal" msprop:Generator_ColumnPropNameInRow="RpMaxAwal" msprop:Generator_ColumnPropNameInTable="RpMaxAwalColumn" msprop:Generator_UserColumnName="RpMaxAwal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetSOHReady" targetNamespace="http://tempuri.org/DataSetSOHReady.xsd" xmlns:mstns="http://tempuri.org/DataSetSOHReady.xsd" xmlns="http://tempuri.org/DataSetSOHReady.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetSOHReady" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSOHReady" msprop:Generator_UserDSName="DataSetSOHReady">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableSOHReady" msprop:Generator_TableClassName="DataTableSOHReadyDataTable" msprop:Generator_TableVarName="tableDataTableSOHReady" msprop:Generator_TablePropName="DataTableSOHReady" msprop:Generator_RowDeletingName="DataTableSOHReadyRowDeleting" msprop:Generator_RowChangingName="DataTableSOHReadyRowChanging" msprop:Generator_RowEvHandlerName="DataTableSOHReadyRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableSOHReadyRowDeleted" msprop:Generator_UserTableName="DataTableSOHReady" msprop:Generator_RowChangedName="DataTableSOHReadyRowChanged" msprop:Generator_RowEvArgName="DataTableSOHReadyRowChangeEvent" msprop:Generator_RowClassName="DataTableSOHReadyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="soh" msprop:Generator_ColumnVarNameInTable="columnsoh" msprop:Generator_ColumnPropNameInRow="soh" msprop:Generator_ColumnPropNameInTable="sohColumn" msprop:Generator_UserColumnName="soh" type="xs:string" minOccurs="0" />
+              <xs:element name="qtybooking" msprop:Generator_ColumnVarNameInTable="columnqtybooking" msprop:Generator_ColumnPropNameInRow="qtybooking" msprop:Generator_ColumnPropNameInTable="qtybookingColumn" msprop:Generator_UserColumnName="qtybooking" type="xs:long" minOccurs="0" />
+              <xs:element name="qtyready" msprop:Generator_ColumnVarNameInTable="columnqtyready" msprop:Generator_ColumnPropNameInRow="qtyready" msprop:Generator_ColumnPropNameInTable="qtyreadyColumn" msprop:Generator_UserColumnName="qtyready" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetKKSO" targetNamespace="http://tempuri.org/DataSetKKSO.xsd" xmlns:mstns="http://tempuri.org/DataSetKKSO.xsd" xmlns="http://tempuri.org/DataSetKKSO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetKKSO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetKKSO" msprop:Generator_UserDSName="DataSetKKSO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblKKSO" msprop:Generator_TableClassName="TblKKSODataTable" msprop:Generator_TableVarName="tableTblKKSO" msprop:Generator_TablePropName="TblKKSO" msprop:Generator_RowDeletingName="TblKKSORowDeleting" msprop:Generator_RowChangingName="TblKKSORowChanging" msprop:Generator_RowEvHandlerName="TblKKSORowChangeEventHandler" msprop:Generator_RowDeletedName="TblKKSORowDeleted" msprop:Generator_UserTableName="TblKKSO" msprop:Generator_RowChangedName="TblKKSORowChanged" msprop:Generator_RowEvArgName="TblKKSORowChangeEvent" msprop:Generator_RowClassName="TblKKSORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="barcode" msprop:Generator_ColumnVarNameInTable="columnbarcode" msprop:Generator_ColumnPropNameInRow="barcode" msprop:Generator_ColumnPropNameInTable="barcodeColumn" msprop:Generator_UserColumnName="barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeproduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeproduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="plano" msprop:Generator_ColumnVarNameInTable="columnplano" msprop:Generator_ColumnPropNameInRow="plano" msprop:Generator_ColumnPropNameInTable="planoColumn" msprop:Generator_UserColumnName="plano" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

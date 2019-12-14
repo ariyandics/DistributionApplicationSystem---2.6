@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSReturSupplier" targetNamespace="http://tempuri.org/DSReturSupplier.xsd" xmlns:mstns="http://tempuri.org/DSReturSupplier.xsd" xmlns="http://tempuri.org/DSReturSupplier.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSReturSupplier" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSReturSupplier" msprop:Generator_UserDSName="DSReturSupplier">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReturBulanan" msprop:Generator_TableClassName="ReturBulananDataTable" msprop:Generator_TableVarName="tableReturBulanan" msprop:Generator_TablePropName="ReturBulanan" msprop:Generator_RowDeletingName="ReturBulananRowDeleting" msprop:Generator_RowChangingName="ReturBulananRowChanging" msprop:Generator_RowEvHandlerName="ReturBulananRowChangeEventHandler" msprop:Generator_RowDeletedName="ReturBulananRowDeleted" msprop:Generator_UserTableName="ReturBulanan" msprop:Generator_RowChangedName="ReturBulananRowChanged" msprop:Generator_RowEvArgName="ReturBulananRowChangeEvent" msprop:Generator_RowClassName="ReturBulananRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="namaSupplier" msprop:Generator_ColumnVarNameInTable="columnnamaSupplier" msprop:Generator_ColumnPropNameInRow="namaSupplier" msprop:Generator_ColumnPropNameInTable="namaSupplierColumn" msprop:Generator_UserColumnName="namaSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:long" minOccurs="0" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Catatan" msprop:Generator_ColumnVarNameInTable="columnCatatan" msprop:Generator_ColumnPropNameInRow="Catatan" msprop:Generator_ColumnPropNameInTable="CatatanColumn" msprop:Generator_UserColumnName="Catatan" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

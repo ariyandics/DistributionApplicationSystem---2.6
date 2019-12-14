@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetLPBReturToko" targetNamespace="http://tempuri.org/DataSetLPBReturToko.xsd" xmlns:mstns="http://tempuri.org/DataSetLPBReturToko.xsd" xmlns="http://tempuri.org/DataSetLPBReturToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetLPBReturToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetLPBReturToko" msprop:Generator_UserDSName="DataSetLPBReturToko">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LPBRekap" msprop:Generator_TableClassName="LPBRekapDataTable" msprop:Generator_TableVarName="tableLPBRekap" msprop:Generator_RowChangedName="LPBRekapRowChanged" msprop:Generator_TablePropName="LPBRekap" msprop:Generator_RowDeletingName="LPBRekapRowDeleting" msprop:Generator_RowChangingName="LPBRekapRowChanging" msprop:Generator_RowEvHandlerName="LPBRekapRowChangeEventHandler" msprop:Generator_RowDeletedName="LPBRekapRowDeleted" msprop:Generator_RowClassName="LPBRekapRow" msprop:Generator_UserTableName="LPBRekap" msprop:Generator_RowEvArgName="LPBRekapRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomorLpb" msprop:Generator_ColumnVarNameInTable="columnnomorLpb" msprop:Generator_ColumnPropNameInRow="nomorLpb" msprop:Generator_ColumnPropNameInTable="nomorLpbColumn" msprop:Generator_UserColumnName="nomorLpb" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeToko" msprop:Generator_ColumnVarNameInTable="columnkodeToko" msprop:Generator_ColumnPropNameInRow="kodeToko" msprop:Generator_ColumnPropNameInTable="kodeTokoColumn" msprop:Generator_UserColumnName="kodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorRetur" msprop:Generator_ColumnVarNameInTable="columnnomorRetur" msprop:Generator_ColumnPropNameInRow="nomorRetur" msprop:Generator_ColumnPropNameInTable="nomorReturColumn" msprop:Generator_UserColumnName="nomorRetur" type="xs:string" minOccurs="0" />
+              <xs:element name="tglLpb" msprop:Generator_ColumnVarNameInTable="columntglLpb" msprop:Generator_ColumnPropNameInRow="tglLpb" msprop:Generator_ColumnPropNameInTable="tglLpbColumn" msprop:Generator_UserColumnName="tglLpb" type="xs:string" minOccurs="0" />
+              <xs:element name="totalItemBs" msprop:Generator_ColumnVarNameInTable="columntotalItemBs" msprop:Generator_ColumnPropNameInRow="totalItemBs" msprop:Generator_ColumnPropNameInTable="totalItemBsColumn" msprop:Generator_UserColumnName="totalItemBs" type="xs:long" minOccurs="0" />
+              <xs:element name="totalItemGs" msprop:Generator_ColumnVarNameInTable="columntotalItemGs" msprop:Generator_ColumnPropNameInRow="totalItemGs" msprop:Generator_ColumnPropNameInTable="totalItemGsColumn" msprop:Generator_UserColumnName="totalItemGs" type="xs:long" minOccurs="0" />
+              <xs:element name="totalRp" msprop:Generator_ColumnVarNameInTable="columntotalRp" msprop:Generator_ColumnPropNameInRow="totalRp" msprop:Generator_ColumnPropNameInTable="totalRpColumn" msprop:Generator_UserColumnName="totalRp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totalPajak" msprop:Generator_ColumnVarNameInTable="columntotalPajak" msprop:Generator_ColumnPropNameInRow="totalPajak" msprop:Generator_ColumnPropNameInTable="totalPajakColumn" msprop:Generator_UserColumnName="totalPajak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totalRpLpb" msprop:Generator_ColumnVarNameInTable="columntotalRpLpb" msprop:Generator_ColumnPropNameInRow="totalRpLpb" msprop:Generator_ColumnPropNameInTable="totalRpLpbColumn" msprop:Generator_UserColumnName="totalRpLpb" type="xs:decimal" minOccurs="0" />
+              <xs:element name="namaToko" msprop:Generator_ColumnVarNameInTable="columnnamatoko" msprop:Generator_ColumnPropNameInRow="namatoko" msprop:Generator_ColumnPropNameInTable="namatokoColumn" msprop:Generator_UserColumnName="namaToko" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LpbDetail" msprop:Generator_TableClassName="LpbDetailDataTable" msprop:Generator_TableVarName="tableLpbDetail" msprop:Generator_RowChangedName="LpbDetailRowChanged" msprop:Generator_TablePropName="LpbDetail" msprop:Generator_RowDeletingName="LpbDetailRowDeleting" msprop:Generator_RowChangingName="LpbDetailRowChanging" msprop:Generator_RowEvHandlerName="LpbDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="LpbDetailRowDeleted" msprop:Generator_RowClassName="LpbDetailRow" msprop:Generator_UserTableName="LpbDetail" msprop:Generator_RowEvArgName="LpbDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeToko" msprop:Generator_ColumnVarNameInTable="columnkodeToko" msprop:Generator_ColumnPropNameInRow="kodeToko" msprop:Generator_ColumnPropNameInTable="kodeTokoColumn" msprop:Generator_UserColumnName="kodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="namaToko" msprop:Generator_ColumnVarNameInTable="columnnamaToko" msprop:Generator_ColumnPropNameInRow="namaToko" msprop:Generator_ColumnPropNameInTable="namaTokoColumn" msprop:Generator_UserColumnName="namaToko" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorLpb" msprop:Generator_ColumnVarNameInTable="columnnomorLpb" msprop:Generator_ColumnPropNameInRow="nomorLpb" msprop:Generator_ColumnPropNameInTable="nomorLpbColumn" msprop:Generator_UserColumnName="nomorLpb" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorRetur" msprop:Generator_ColumnVarNameInTable="columnnomorRetur" msprop:Generator_ColumnPropNameInRow="nomorRetur" msprop:Generator_ColumnPropNameInTable="nomorReturColumn" msprop:Generator_UserColumnName="nomorRetur" type="xs:string" minOccurs="0" />
+              <xs:element name="tglLpb" msprop:Generator_ColumnVarNameInTable="columntglLpb" msprop:Generator_ColumnPropNameInRow="tglLpb" msprop:Generator_ColumnPropNameInTable="tglLpbColumn" msprop:Generator_UserColumnName="tglLpb" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:long" minOccurs="0" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pajak" msprop:Generator_ColumnVarNameInTable="columnpajak" msprop:Generator_ColumnPropNameInRow="pajak" msprop:Generator_ColumnPropNameInTable="pajakColumn" msprop:Generator_UserColumnName="pajak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="namaRetur" msprop:Generator_ColumnVarNameInTable="columnnamaRetur" msprop:Generator_ColumnPropNameInRow="namaRetur" msprop:Generator_ColumnPropNameInTable="namaReturColumn" msprop:Generator_UserColumnName="namaRetur" type="xs:string" minOccurs="0" />
+              <xs:element name="subTotal" msprop:Generator_ColumnVarNameInTable="columnsubTotal" msprop:Generator_ColumnPropNameInRow="subTotal" msprop:Generator_ColumnPropNameInTable="subTotalColumn" msprop:Generator_UserColumnName="subTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="JenisStok" msprop:Generator_ColumnVarNameInTable="columnJenisStok" msprop:Generator_ColumnPropNameInRow="JenisStok" msprop:Generator_ColumnPropNameInTable="JenisStokColumn" msprop:Generator_UserColumnName="JenisStok" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReturRekap" msprop:Generator_TableClassName="ReturRekapDataTable" msprop:Generator_TableVarName="tableReturRekap" msprop:Generator_RowChangedName="ReturRekapRowChanged" msprop:Generator_TablePropName="ReturRekap" msprop:Generator_RowDeletingName="ReturRekapRowDeleting" msprop:Generator_RowChangingName="ReturRekapRowChanging" msprop:Generator_RowEvHandlerName="ReturRekapRowChangeEventHandler" msprop:Generator_RowDeletedName="ReturRekapRowDeleted" msprop:Generator_RowClassName="ReturRekapRow" msprop:Generator_UserTableName="ReturRekap" msprop:Generator_RowEvArgName="ReturRekapRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tglretur" msprop:Generator_ColumnVarNameInTable="columntglretur" msprop:Generator_ColumnPropNameInRow="tglretur" msprop:Generator_ColumnPropNameInTable="tglreturColumn" msprop:Generator_UserColumnName="tglretur" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorretur" msprop:Generator_ColumnVarNameInTable="columnnomorretur" msprop:Generator_ColumnPropNameInRow="nomorretur" msprop:Generator_ColumnPropNameInTable="nomorreturColumn" msprop:Generator_UserColumnName="nomorretur" type="xs:string" minOccurs="0" />
+              <xs:element name="kodetoko" msprop:Generator_ColumnVarNameInTable="columnkodetoko" msprop:Generator_ColumnPropNameInRow="kodetoko" msprop:Generator_ColumnPropNameInTable="kodetokoColumn" msprop:Generator_UserColumnName="kodetoko" type="xs:string" minOccurs="0" />
+              <xs:element name="namatoko" msprop:Generator_ColumnVarNameInTable="columnnamatoko" msprop:Generator_ColumnPropNameInRow="namatoko" msprop:Generator_ColumnPropNameInTable="namatokoColumn" msprop:Generator_UserColumnName="namatoko" type="xs:string" minOccurs="0" />
+              <xs:element name="totalitemGS" msprop:Generator_ColumnVarNameInTable="columntotalitemGS" msprop:Generator_ColumnPropNameInRow="totalitemGS" msprop:Generator_ColumnPropNameInTable="totalitemGSColumn" msprop:Generator_UserColumnName="totalitemGS" type="xs:string" minOccurs="0" />
+              <xs:element name="totalitemBS" msprop:Generator_ColumnVarNameInTable="columntotalitemBS" msprop:Generator_ColumnPropNameInRow="totalitemBS" msprop:Generator_ColumnPropNameInTable="totalitemBSColumn" msprop:Generator_UserColumnName="totalitemBS" type="xs:string" minOccurs="0" />
+              <xs:element name="totalrp" msprop:Generator_ColumnVarNameInTable="columntotalrp" msprop:Generator_ColumnPropNameInRow="totalrp" msprop:Generator_ColumnPropNameInTable="totalrpColumn" msprop:Generator_UserColumnName="totalrp" type="xs:string" minOccurs="0" />
+              <xs:element name="totalpajak" msprop:Generator_ColumnVarNameInTable="columntotalpajak" msprop:Generator_ColumnPropNameInRow="totalpajak" msprop:Generator_ColumnPropNameInTable="totalpajakColumn" msprop:Generator_UserColumnName="totalpajak" type="xs:string" minOccurs="0" />
+              <xs:element name="totalrpretur" msprop:Generator_ColumnVarNameInTable="columntotalrpretur" msprop:Generator_ColumnPropNameInRow="totalrpretur" msprop:Generator_ColumnPropNameInTable="totalrpreturColumn" msprop:Generator_UserColumnName="totalrpretur" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReturDetail" msprop:Generator_TableClassName="ReturDetailDataTable" msprop:Generator_TableVarName="tableReturDetail" msprop:Generator_TablePropName="ReturDetail" msprop:Generator_RowDeletingName="ReturDetailRowDeleting" msprop:Generator_RowChangingName="ReturDetailRowChanging" msprop:Generator_RowEvHandlerName="ReturDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="ReturDetailRowDeleted" msprop:Generator_UserTableName="ReturDetail" msprop:Generator_RowChangedName="ReturDetailRowChanged" msprop:Generator_RowEvArgName="ReturDetailRowChangeEvent" msprop:Generator_RowClassName="ReturDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tglRetur" msprop:Generator_ColumnVarNameInTable="columntglRetur" msprop:Generator_ColumnPropNameInRow="tglRetur" msprop:Generator_ColumnPropNameInTable="tglReturColumn" msprop:Generator_UserColumnName="tglRetur" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeToko" msprop:Generator_ColumnVarNameInTable="columnkodeToko" msprop:Generator_ColumnPropNameInRow="kodeToko" msprop:Generator_ColumnPropNameInTable="kodeTokoColumn" msprop:Generator_UserColumnName="kodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="namaToko" msprop:Generator_ColumnVarNameInTable="columnnamaToko" msprop:Generator_ColumnPropNameInRow="namaToko" msprop:Generator_ColumnPropNameInTable="namaTokoColumn" msprop:Generator_UserColumnName="namaToko" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorRetur" msprop:Generator_ColumnVarNameInTable="columnnomorRetur" msprop:Generator_ColumnPropNameInRow="nomorRetur" msprop:Generator_ColumnPropNameInTable="nomorReturColumn" msprop:Generator_UserColumnName="nomorRetur" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:double" minOccurs="0" />
+              <xs:element name="pajak" msprop:Generator_ColumnVarNameInTable="columnpajak" msprop:Generator_ColumnPropNameInRow="pajak" msprop:Generator_ColumnPropNameInTable="pajakColumn" msprop:Generator_UserColumnName="pajak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="subTotal" msprop:Generator_ColumnVarNameInTable="columnsubTotal" msprop:Generator_ColumnPropNameInRow="subTotal" msprop:Generator_ColumnPropNameInTable="subTotalColumn" msprop:Generator_UserColumnName="subTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="namaRetur" msprop:Generator_ColumnVarNameInTable="columnnamaRetur" msprop:Generator_ColumnPropNameInRow="namaRetur" msprop:Generator_ColumnPropNameInTable="namaReturColumn" msprop:Generator_UserColumnName="namaRetur" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

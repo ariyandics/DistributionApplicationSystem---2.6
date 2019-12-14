@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMutasi" targetNamespace="http://tempuri.org/DataSetMutasi.xsd" xmlns:mstns="http://tempuri.org/DataSetMutasi.xsd" xmlns="http://tempuri.org/DataSetMutasi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMutasi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMutasi" msprop:Generator_UserDSName="DataSetMutasi">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableMutasi" msprop:Generator_TableClassName="DataTableMutasiDataTable" msprop:Generator_TableVarName="tableDataTableMutasi" msprop:Generator_RowChangedName="DataTableMutasiRowChanged" msprop:Generator_TablePropName="DataTableMutasi" msprop:Generator_RowDeletingName="DataTableMutasiRowDeleting" msprop:Generator_RowChangingName="DataTableMutasiRowChanging" msprop:Generator_RowEvHandlerName="DataTableMutasiRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableMutasiRowDeleted" msprop:Generator_RowClassName="DataTableMutasiRow" msprop:Generator_UserTableName="DataTableMutasi" msprop:Generator_RowEvArgName="DataTableMutasiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="barcode" msprop:Generator_ColumnVarNameInTable="columnbarcode" msprop:Generator_ColumnPropNameInRow="barcode" msprop:Generator_ColumnPropNameInTable="barcodeColumn" msprop:Generator_UserColumnName="barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeproduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeproduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namapanjang" msprop:Generator_ColumnVarNameInTable="columnnamapanjang" msprop:Generator_ColumnPropNameInRow="namapanjang" msprop:Generator_ColumnPropNameInTable="namapanjangColumn" msprop:Generator_UserColumnName="namapanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:double" minOccurs="0" />
+              <xs:element name="hpp" msprop:Generator_ColumnVarNameInTable="columnhpp" msprop:Generator_ColumnPropNameInRow="hpp" msprop:Generator_ColumnPropNameInTable="hppColumn" msprop:Generator_UserColumnName="hpp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="subtotal" msprop:Generator_ColumnVarNameInTable="columnsubtotal" msprop:Generator_ColumnPropNameInRow="subtotal" msprop:Generator_ColumnPropNameInTable="subtotalColumn" msprop:Generator_UserColumnName="subtotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblMutasiOUT" msprop:Generator_TableClassName="TblMutasiOUTDataTable" msprop:Generator_TableVarName="tableTblMutasiOUT" msprop:Generator_TablePropName="TblMutasiOUT" msprop:Generator_RowDeletingName="TblMutasiOUTRowDeleting" msprop:Generator_RowChangingName="TblMutasiOUTRowChanging" msprop:Generator_RowEvHandlerName="TblMutasiOUTRowChangeEventHandler" msprop:Generator_RowDeletedName="TblMutasiOUTRowDeleted" msprop:Generator_UserTableName="TblMutasiOUT" msprop:Generator_RowChangedName="TblMutasiOUTRowChanged" msprop:Generator_RowEvArgName="TblMutasiOUTRowChangeEvent" msprop:Generator_RowClassName="TblMutasiOUTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="barcode" msprop:Generator_ColumnVarNameInTable="columnbarcode" msprop:Generator_ColumnPropNameInRow="barcode" msprop:Generator_ColumnPropNameInTable="barcodeColumn" msprop:Generator_UserColumnName="barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:string" minOccurs="0" />
+              <xs:element name="hppDc" msprop:Generator_ColumnVarNameInTable="columnhppDc" msprop:Generator_ColumnPropNameInRow="hppDc" msprop:Generator_ColumnPropNameInTable="hppDcColumn" msprop:Generator_UserColumnName="hppDc" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRp" msprop:Generator_ColumnVarNameInTable="columnTotalRp" msprop:Generator_ColumnPropNameInRow="TotalRp" msprop:Generator_ColumnPropNameInTable="TotalRpColumn" msprop:Generator_UserColumnName="TotalRp" type="xs:string" minOccurs="0" />
+              <xs:element name="pajak" msprop:Generator_ColumnVarNameInTable="columnpajak" msprop:Generator_ColumnPropNameInRow="pajak" msprop:Generator_ColumnPropNameInTable="pajakColumn" msprop:Generator_UserColumnName="pajak" type="xs:string" minOccurs="0" />
+              <xs:element name="subTotal" msprop:Generator_ColumnVarNameInTable="columnsubTotal" msprop:Generator_ColumnPropNameInRow="subTotal" msprop:Generator_ColumnPropNameInTable="subTotalColumn" msprop:Generator_UserColumnName="subTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

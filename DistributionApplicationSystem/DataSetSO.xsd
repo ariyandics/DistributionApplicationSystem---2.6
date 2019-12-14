@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetSO" targetNamespace="http://tempuri.org/DataSetSO.xsd" xmlns:mstns="http://tempuri.org/DataSetSO.xsd" xmlns="http://tempuri.org/DataSetSO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetSO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSO" msprop:Generator_UserDSName="DataSetSO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetSO" msprop:Generator_TableClassName="DataSetSODataTable" msprop:Generator_TableVarName="tableDataSetSO" msprop:Generator_TablePropName="_DataSetSO" msprop:Generator_RowDeletingName="DataSetSORowDeleting" msprop:Generator_RowChangingName="DataSetSORowChanging" msprop:Generator_RowEvHandlerName="DataSetSORowChangeEventHandler" msprop:Generator_RowDeletedName="DataSetSORowDeleted" msprop:Generator_UserTableName="DataSetSO" msprop:Generator_RowChangedName="DataSetSORowChanged" msprop:Generator_RowEvArgName="DataSetSORowChangeEvent" msprop:Generator_RowClassName="DataSetSORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeproduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeproduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namapanjang" msprop:Generator_ColumnVarNameInTable="columnnamapanjang" msprop:Generator_ColumnPropNameInRow="namapanjang" msprop:Generator_ColumnPropNameInTable="namapanjangColumn" msprop:Generator_UserColumnName="namapanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="plano" msprop:Generator_ColumnVarNameInTable="columnplano" msprop:Generator_ColumnPropNameInRow="plano" msprop:Generator_ColumnPropNameInTable="planoColumn" msprop:Generator_UserColumnName="plano" type="xs:string" minOccurs="0" />
+              <xs:element name="qtyfreeze" msprop:Generator_ColumnVarNameInTable="columnqtyfreeze" msprop:Generator_ColumnPropNameInRow="qtyfreeze" msprop:Generator_ColumnPropNameInTable="qtyfreezeColumn" msprop:Generator_UserColumnName="qtyfreeze" type="xs:long" minOccurs="0" />
+              <xs:element name="qtyfisik" msprop:Generator_ColumnVarNameInTable="columnqtyfisik" msprop:Generator_ColumnPropNameInRow="qtyfisik" msprop:Generator_ColumnPropNameInTable="qtyfisikColumn" msprop:Generator_UserColumnName="qtyfisik" type="xs:long" minOccurs="0" />
+              <xs:element name="qtyselisih" msprop:Generator_ColumnVarNameInTable="columnqtyselisih" msprop:Generator_ColumnPropNameInRow="qtyselisih" msprop:Generator_ColumnPropNameInTable="qtyselisihColumn" msprop:Generator_UserColumnName="qtyselisih" type="xs:long" minOccurs="0" />
+              <xs:element name="Alasan" msprop:Generator_ColumnVarNameInTable="columnAlasan" msprop:Generator_ColumnPropNameInRow="Alasan" msprop:Generator_ColumnPropNameInTable="AlasanColumn" msprop:Generator_UserColumnName="Alasan" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblRptRekapSO" msprop:Generator_TableClassName="TblRptRekapSODataTable" msprop:Generator_TableVarName="tableTblRptRekapSO" msprop:Generator_RowChangedName="TblRptRekapSORowChanged" msprop:Generator_TablePropName="TblRptRekapSO" msprop:Generator_RowDeletingName="TblRptRekapSORowDeleting" msprop:Generator_RowChangingName="TblRptRekapSORowChanging" msprop:Generator_RowEvHandlerName="TblRptRekapSORowChangeEventHandler" msprop:Generator_RowDeletedName="TblRptRekapSORowDeleted" msprop:Generator_RowClassName="TblRptRekapSORow" msprop:Generator_UserTableName="TblRptRekapSO" msprop:Generator_RowEvArgName="TblRptRekapSORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nomor" msprop:Generator_ColumnVarNameInTable="columnNomor" msprop:Generator_ColumnPropNameInRow="Nomor" msprop:Generator_ColumnPropNameInTable="NomorColumn" msprop:Generator_UserColumnName="Nomor" type="xs:string" minOccurs="0" />
+              <xs:element name="Tgl" msprop:Generator_ColumnVarNameInTable="columnTgl" msprop:Generator_ColumnPropNameInRow="Tgl" msprop:Generator_ColumnPropNameInTable="TglColumn" msprop:Generator_UserColumnName="Tgl" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="qtysoh" msprop:Generator_ColumnVarNameInTable="columnqtysoh" msprop:Generator_ColumnPropNameInRow="qtysoh" msprop:Generator_ColumnPropNameInTable="qtysohColumn" msprop:Generator_UserColumnName="qtysoh" type="xs:double" minOccurs="0" />
+              <xs:element name="rpsoh" msprop:Generator_ColumnVarNameInTable="columnrpsoh" msprop:Generator_ColumnPropNameInRow="rpsoh" msprop:Generator_ColumnPropNameInTable="rpsohColumn" msprop:Generator_UserColumnName="rpsoh" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtyfisik" msprop:Generator_ColumnVarNameInTable="columnqtyfisik" msprop:Generator_ColumnPropNameInRow="qtyfisik" msprop:Generator_ColumnPropNameInTable="qtyfisikColumn" msprop:Generator_UserColumnName="qtyfisik" type="xs:double" minOccurs="0" />
+              <xs:element name="rpfisik" msprop:Generator_ColumnVarNameInTable="columnrpfisik" msprop:Generator_ColumnPropNameInRow="rpfisik" msprop:Generator_ColumnPropNameInTable="rpfisikColumn" msprop:Generator_UserColumnName="rpfisik" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtysel" msprop:Generator_ColumnVarNameInTable="columnqtysel" msprop:Generator_ColumnPropNameInRow="qtysel" msprop:Generator_ColumnPropNameInTable="qtyselColumn" msprop:Generator_UserColumnName="qtysel" type="xs:double" minOccurs="0" />
+              <xs:element name="rpselisih" msprop:Generator_ColumnVarNameInTable="columnrpselisih" msprop:Generator_ColumnPropNameInRow="rpselisih" msprop:Generator_ColumnPropNameInTable="rpselisihColumn" msprop:Generator_UserColumnName="rpselisih" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblRptDetailSO" msprop:Generator_TableClassName="TblRptDetailSODataTable" msprop:Generator_TableVarName="tableTblRptDetailSO" msprop:Generator_RowChangedName="TblRptDetailSORowChanged" msprop:Generator_TablePropName="TblRptDetailSO" msprop:Generator_RowDeletingName="TblRptDetailSORowDeleting" msprop:Generator_RowChangingName="TblRptDetailSORowChanging" msprop:Generator_RowEvHandlerName="TblRptDetailSORowChangeEventHandler" msprop:Generator_RowDeletedName="TblRptDetailSORowDeleted" msprop:Generator_RowClassName="TblRptDetailSORow" msprop:Generator_UserTableName="TblRptDetailSO" msprop:Generator_RowEvArgName="TblRptDetailSORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nomor" msprop:Generator_ColumnVarNameInTable="columnNomor" msprop:Generator_ColumnPropNameInRow="Nomor" msprop:Generator_ColumnPropNameInTable="NomorColumn" msprop:Generator_UserColumnName="Nomor" type="xs:string" minOccurs="0" />
+              <xs:element name="Tgl" msprop:Generator_ColumnVarNameInTable="columnTgl" msprop:Generator_ColumnPropNameInRow="Tgl" msprop:Generator_ColumnPropNameInTable="TglColumn" msprop:Generator_UserColumnName="Tgl" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtysoh" msprop:Generator_ColumnVarNameInTable="columnqtysoh" msprop:Generator_ColumnPropNameInRow="qtysoh" msprop:Generator_ColumnPropNameInTable="qtysohColumn" msprop:Generator_UserColumnName="qtysoh" type="xs:double" minOccurs="0" />
+              <xs:element name="rpsoh" msprop:Generator_ColumnVarNameInTable="columnrpsoh" msprop:Generator_ColumnPropNameInRow="rpsoh" msprop:Generator_ColumnPropNameInTable="rpsohColumn" msprop:Generator_UserColumnName="rpsoh" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtyfisik" msprop:Generator_ColumnVarNameInTable="columnqtyfisik" msprop:Generator_ColumnPropNameInRow="qtyfisik" msprop:Generator_ColumnPropNameInTable="qtyfisikColumn" msprop:Generator_UserColumnName="qtyfisik" type="xs:double" minOccurs="0" />
+              <xs:element name="rpfisik" msprop:Generator_ColumnVarNameInTable="columnrpfisik" msprop:Generator_ColumnPropNameInRow="rpfisik" msprop:Generator_ColumnPropNameInTable="rpfisikColumn" msprop:Generator_UserColumnName="rpfisik" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtysel" msprop:Generator_ColumnVarNameInTable="columnqtysel" msprop:Generator_ColumnPropNameInRow="qtysel" msprop:Generator_ColumnPropNameInTable="qtyselColumn" msprop:Generator_UserColumnName="qtysel" type="xs:double" minOccurs="0" />
+              <xs:element name="rpselisih" msprop:Generator_ColumnVarNameInTable="columnrpselisih" msprop:Generator_ColumnPropNameInRow="rpselisih" msprop:Generator_ColumnPropNameInTable="rpselisihColumn" msprop:Generator_UserColumnName="rpselisih" type="xs:decimal" minOccurs="0" />
+              <xs:element name="alasan" msprop:Generator_ColumnVarNameInTable="columnalasan" msprop:Generator_ColumnPropNameInRow="alasan" msprop:Generator_ColumnPropNameInTable="alasanColumn" msprop:Generator_UserColumnName="alasan" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSoTokoDetail" msprop:Generator_TableClassName="dtSoTokoDetailDataTable" msprop:Generator_TableVarName="tabledtSoTokoDetail" msprop:Generator_RowChangedName="dtSoTokoDetailRowChanged" msprop:Generator_TablePropName="dtSoTokoDetail" msprop:Generator_RowDeletingName="dtSoTokoDetailRowDeleting" msprop:Generator_RowChangingName="dtSoTokoDetailRowChanging" msprop:Generator_RowEvHandlerName="dtSoTokoDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSoTokoDetailRowDeleted" msprop:Generator_RowClassName="dtSoTokoDetailRow" msprop:Generator_UserTableName="dtSoTokoDetail" msprop:Generator_RowEvArgName="dtSoTokoDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" msprop:Generator_UserColumnName="KodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="namaToko" msprop:Generator_ColumnVarNameInTable="columnnamaToko" msprop:Generator_ColumnPropNameInRow="namaToko" msprop:Generator_ColumnPropNameInTable="namaTokoColumn" msprop:Generator_UserColumnName="namaToko" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorSoAdjusment" msprop:Generator_ColumnVarNameInTable="columnnomorSoAdjusment" msprop:Generator_ColumnPropNameInRow="nomorSoAdjusment" msprop:Generator_ColumnPropNameInTable="nomorSoAdjusmentColumn" msprop:Generator_UserColumnName="nomorSoAdjusment" type="xs:string" minOccurs="0" />
+              <xs:element name="tglSOAdjusment" msprop:Generator_ColumnVarNameInTable="columntglSOAdjusment" msprop:Generator_ColumnPropNameInRow="tglSOAdjusment" msprop:Generator_ColumnPropNameInTable="tglSOAdjusmentColumn" msprop:Generator_UserColumnName="tglSOAdjusment" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="JenisSO" msprop:Generator_ColumnVarNameInTable="columnJenisSO" msprop:Generator_ColumnPropNameInRow="JenisSO" msprop:Generator_ColumnPropNameInTable="JenisSOColumn" msprop:Generator_UserColumnName="JenisSO" type="xs:string" minOccurs="0" />
+              <xs:element name="TipeSO" msprop:Generator_ColumnVarNameInTable="columnTipeSO" msprop:Generator_ColumnPropNameInRow="TipeSO" msprop:Generator_ColumnPropNameInTable="TipeSOColumn" msprop:Generator_UserColumnName="TipeSO" type="xs:string" minOccurs="0" />
+              <xs:element name="iduser" msprop:Generator_ColumnVarNameInTable="columniduser" msprop:Generator_ColumnPropNameInRow="iduser" msprop:Generator_ColumnPropNameInTable="iduserColumn" msprop:Generator_UserColumnName="iduser" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeproduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeproduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namapanjang" msprop:Generator_ColumnVarNameInTable="columnnamapanjang" msprop:Generator_ColumnPropNameInRow="namapanjang" msprop:Generator_ColumnPropNameInTable="namapanjangColumn" msprop:Generator_UserColumnName="namapanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtySelisih" msprop:Generator_ColumnVarNameInTable="columnqtySelisih" msprop:Generator_ColumnPropNameInRow="qtySelisih" msprop:Generator_ColumnPropNameInTable="qtySelisihColumn" msprop:Generator_UserColumnName="qtySelisih" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:string" minOccurs="0" />
+              <xs:element name="SubTotalValue" msprop:Generator_ColumnVarNameInTable="columnSubTotalValue" msprop:Generator_ColumnPropNameInRow="SubTotalValue" msprop:Generator_ColumnPropNameInTable="SubTotalValueColumn" msprop:Generator_UserColumnName="SubTotalValue" type="xs:string" minOccurs="0" />
+              <xs:element name="Alasan" msprop:Generator_ColumnVarNameInTable="columnAlasan" msprop:Generator_ColumnPropNameInRow="Alasan" msprop:Generator_ColumnPropNameInTable="AlasanColumn" msprop:Generator_UserColumnName="Alasan" type="xs:string" minOccurs="0" />
+              <xs:element name="SumQtyPlus" msprop:Generator_ColumnVarNameInTable="columnSumQtyPlus" msprop:Generator_ColumnPropNameInRow="SumQtyPlus" msprop:Generator_ColumnPropNameInTable="SumQtyPlusColumn" msprop:Generator_UserColumnName="SumQtyPlus" type="xs:string" minOccurs="0" />
+              <xs:element name="SumHppPlus" msprop:Generator_ColumnVarNameInTable="columnSumHppPlus" msprop:Generator_ColumnPropNameInRow="SumHppPlus" msprop:Generator_ColumnPropNameInTable="SumHppPlusColumn" msprop:Generator_UserColumnName="SumHppPlus" type="xs:string" minOccurs="0" />
+              <xs:element name="SumQtyMinus" msprop:Generator_ColumnVarNameInTable="columnSumQtyMinus" msprop:Generator_ColumnPropNameInRow="SumQtyMinus" msprop:Generator_ColumnPropNameInTable="SumQtyMinusColumn" msprop:Generator_UserColumnName="SumQtyMinus" type="xs:string" minOccurs="0" />
+              <xs:element name="SumHppMinus" msprop:Generator_ColumnVarNameInTable="columnSumHppMinus" msprop:Generator_ColumnPropNameInRow="SumHppMinus" msprop:Generator_ColumnPropNameInTable="SumHppMinusColumn" msprop:Generator_UserColumnName="SumHppMinus" type="xs:string" minOccurs="0" />
+              <xs:element name="SumSelisih" msprop:Generator_ColumnVarNameInTable="columnSumSelisih" msprop:Generator_ColumnPropNameInRow="SumSelisih" msprop:Generator_ColumnPropNameInTable="SumSelisihColumn" msprop:Generator_UserColumnName="SumSelisih" type="xs:string" minOccurs="0" />
+              <xs:element name="SumHppSelisih" msprop:Generator_ColumnVarNameInTable="columnSumHppSelisih" msprop:Generator_ColumnPropNameInRow="SumHppSelisih" msprop:Generator_ColumnPropNameInTable="SumHppSelisihColumn" msprop:Generator_UserColumnName="SumHppSelisih" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

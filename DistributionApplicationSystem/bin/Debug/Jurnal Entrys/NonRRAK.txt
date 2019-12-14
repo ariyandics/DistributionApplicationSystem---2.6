@@ -1,0 +1,86 @@
+GO
+/****** Object:  StoredProcedure [dbo].[Select_NONRRAK]    Script Date: 10/12/2019 11:03:46 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Select_NONRRAK]
+      
+AS
+BEGIN
+	SET NOCOUNT ON;
+	-- Versi 2.2
+	
+	DECLARE @JournalGroup varchar(10)
+	DECLARE @CoaAR varchar(10)
+	
+	-- REALISASI RRAK
+	SET @JournalGroup = 'RRAK' 
+	
+	SET @CoaAR='11040004'
+	
+	DECLARE @tblJournal TABLE(journal_id bigint, journal_group varchar(10), posting_date date, coa_code varchar(10), location_code varchar(7), partner_code varchar(7), reference varchar(60), [description] varchar(60), debit float, credit float);
+	DECLARE @tblRRAK TABLE(tglReal date, COACode varchar(10), kodeToko varchar(7), NoNR int, Keterangan varchar(60), Nominal bigint)
+
+	-- Create Temporary
+	INSERT INTO @tblRRAK 
+	SELECT A.TglApproveWADS, B.KodeCOA, A.kodeToko, A.NomerNonRRAK, B.NamaCOA, B.NilaiRealWADS
+		FROM TblNonRRAKHeader A WITH (NOLOCK)
+		JOIN TblNonRRAKDetail B WITH (NOLOCK) ON (B.NomerNonRRAK=A.NomerNonRRAK AND B.KodeToko=A.KodeToko)  
+		WHERE A.TglSync IS NULL AND A.statusRealisasi=3
+	
+	DECLARE @IdPerusahaan int
+	DECLARE @idDc int
+	DECLARE @tipeDoc int
+	DECLARE @kodeStatusToko char(1) 
+	
+	SET @tipeDoc = 24 -- 22 REALISASI RRAK TOKO
+
+	DECLARE @kodeToko varchar(7)
+	DECLARE @idLoop int
+	DECLARE cur cursor FOR
+		SELECT DISTINCT kodeToko, NoNR FROM @tblRRAK 
+
+	OPEN cur
+		FETCH NEXT FROM cur INTO @kodeToko, @idLoop
+	
+	WHILE @@FETCH_STATUS=0
+		BEGIN
+	
+			SELECT TOP (1) @kodeStatusToko=kodeStatusToko, @idDc=idDc FROM MstToko WHERE kodeToko=@kodeToko  
+			IF @kodeStatusToko='R'
+				BEGIN
+					 SELECT TOP (1) @IdPerusahaan=IdPerusahaan FROM MstDC WHERE idDC=@idDc  
+				END
+			ELSE
+				BEGIN
+					SET @IdPerusahaan=@kodeToko  
+				END 
+
+			-- BIAYA RRAK
+			INSERT INTO @tblJournal (journal_id, journal_group, posting_date, coa_code
+				,location_code, partner_code, reference, [description], debit, credit)
+				SELECT (LTRIM(STR(@idDc)) + LTRIM(STR(@tipeDoc))  + RIGHT(NoNR, 8)) AS JournalId, @JournalGroup AS JournalGroup, tglReal, COACode, 
+				kodeToko, @idPerusahaan AS IdPerusahaan, 'NRK'+LTRIM(STR(NoNR)) AS reference, Keterangan AS [description], Nominal AS debit, 0 AS credit
+					FROM @tblRRAK WHERE NoNR=@idLoop AND kodeToko=@kodeToko   
+					
+			-- PIUTANG LAIN-LAIN
+			INSERT INTO @tblJournal (journal_id, journal_group, posting_date, coa_code
+				,location_code, partner_code, reference, [description], debit, credit)
+				SELECT JournalId, JournalGroup, tglReal, COACode, 
+				kodeToko, IdPerusahaan, 'NRK'+LTRIM(STR(NoNR)) AS reference, ' ' AS [description], SUM(debit), SUM(credit) FROM (
+					SELECT (LTRIM(STR(@idDc)) + LTRIM(STR(@tipeDoc))  + RIGHT(NoNR, 8)) AS JournalId, @JournalGroup AS JournalGroup, tglReal, @CoaAR AS COACode, kodeToko, @idPerusahaan AS IdPerusahaan, NoNR, 0 AS debit, Nominal AS credit
+						FROM @tblRRAK WHERE NoNR=@idLoop AND kodeToko=@kodeToko 
+					)z GROUP BY JournalId, JournalGroup, tglReal, COACode, kodeToko, IdPerusahaan, NoNR   
+		
+			FETCH NEXT FROM cur INTO @kodeToko, @idLoop
+		END
+	CLOSE cur
+	DEALLOCATE cur 
+
+	DELETE FROM @tblJournal WHERE debit=0 AND credit=0
+	-- Query Table
+    SELECT * FROM @tblJournal 
+	  
+END 

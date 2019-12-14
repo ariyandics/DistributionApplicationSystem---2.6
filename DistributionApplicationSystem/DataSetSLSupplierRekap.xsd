@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetSLSupplierRekap" targetNamespace="http://tempuri.org/DataSetSLSupplierRekap.xsd" xmlns:mstns="http://tempuri.org/DataSetSLSupplierRekap.xsd" xmlns="http://tempuri.org/DataSetSLSupplierRekap.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetSLSupplierRekap" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSLSupplierRekap" msprop:Generator_UserDSName="DataSetSLSupplierRekap">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableSLSupplierRekap" msprop:Generator_TableClassName="DataTableSLSupplierRekapDataTable" msprop:Generator_TableVarName="tableDataTableSLSupplierRekap" msprop:Generator_TablePropName="DataTableSLSupplierRekap" msprop:Generator_RowDeletingName="DataTableSLSupplierRekapRowDeleting" msprop:Generator_RowChangingName="DataTableSLSupplierRekapRowChanging" msprop:Generator_RowEvHandlerName="DataTableSLSupplierRekapRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableSLSupplierRekapRowDeleted" msprop:Generator_UserTableName="DataTableSLSupplierRekap" msprop:Generator_RowChangedName="DataTableSLSupplierRekapRowChanged" msprop:Generator_RowEvArgName="DataTableSLSupplierRekapRowChangeEvent" msprop:Generator_RowClassName="DataTableSLSupplierRekapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodesupplier" msprop:Generator_ColumnVarNameInTable="columnkodesupplier" msprop:Generator_ColumnPropNameInRow="kodesupplier" msprop:Generator_ColumnPropNameInTable="kodesupplierColumn" msprop:Generator_UserColumnName="kodesupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="namasupplier" msprop:Generator_ColumnVarNameInTable="columnnamasupplier" msprop:Generator_ColumnPropNameInRow="namasupplier" msprop:Generator_ColumnPropNameInTable="namasupplierColumn" msprop:Generator_UserColumnName="namasupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="nomorpo" msprop:Generator_ColumnVarNameInTable="columnnomorpo" msprop:Generator_ColumnPropNameInRow="nomorpo" msprop:Generator_ColumnPropNameInTable="nomorpoColumn" msprop:Generator_UserColumnName="nomorpo" type="xs:long" minOccurs="0" />
+              <xs:element name="tglpo" msprop:Generator_ColumnVarNameInTable="columntglpo" msprop:Generator_ColumnPropNameInRow="tglpo" msprop:Generator_ColumnPropNameInTable="tglpoColumn" msprop:Generator_UserColumnName="tglpo" type="xs:string" minOccurs="0" />
+              <xs:element name="tglExpiredPo" msprop:Generator_ColumnVarNameInTable="columntglExpiredPo" msprop:Generator_ColumnPropNameInRow="tglExpiredPo" msprop:Generator_ColumnPropNameInTable="tglExpiredPoColumn" msprop:Generator_UserColumnName="tglExpiredPo" type="xs:string" minOccurs="0" />
+              <xs:element name="totalitem" msprop:Generator_ColumnVarNameInTable="columntotalitem" msprop:Generator_ColumnPropNameInRow="totalitem" msprop:Generator_ColumnPropNameInTable="totalitemColumn" msprop:Generator_UserColumnName="totalitem" type="xs:long" minOccurs="0" />
+              <xs:element name="totalqty" msprop:Generator_ColumnVarNameInTable="columntotalqty" msprop:Generator_ColumnPropNameInRow="totalqty" msprop:Generator_ColumnPropNameInTable="totalqtyColumn" msprop:Generator_UserColumnName="totalqty" type="xs:long" minOccurs="0" />
+              <xs:element name="totalrpPO" msprop:Generator_ColumnVarNameInTable="columntotalrpPO" msprop:Generator_ColumnPropNameInRow="totalrpPO" msprop:Generator_ColumnPropNameInTable="totalrpPOColumn" msprop:Generator_UserColumnName="totalrpPO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemLPB" msprop:Generator_ColumnVarNameInTable="columnItemLPB" msprop:Generator_ColumnPropNameInRow="ItemLPB" msprop:Generator_ColumnPropNameInTable="ItemLPBColumn" msprop:Generator_UserColumnName="ItemLPB" type="xs:long" minOccurs="0" />
+              <xs:element name="totalqtypcs" msprop:Generator_ColumnVarNameInTable="columntotalqtypcs" msprop:Generator_ColumnPropNameInRow="totalqtypcs" msprop:Generator_ColumnPropNameInTable="totalqtypcsColumn" msprop:Generator_UserColumnName="totalqtypcs" type="xs:long" minOccurs="0" />
+              <xs:element name="totalrpLpb" msprop:Generator_ColumnVarNameInTable="columntotalrpLpb" msprop:Generator_ColumnPropNameInRow="totalrpLpb" msprop:Generator_ColumnPropNameInTable="totalrpLpbColumn" msprop:Generator_UserColumnName="totalrpLpb" type="xs:decimal" minOccurs="0" />
+              <xs:element name="itemp" msprop:Generator_ColumnVarNameInTable="columnitemp" msprop:Generator_ColumnPropNameInRow="itemp" msprop:Generator_ColumnPropNameInTable="itempColumn" msprop:Generator_UserColumnName="itemp" type="xs:long" minOccurs="0" />
+              <xs:element name="qtyP" msprop:Generator_ColumnVarNameInTable="columnqtyP" msprop:Generator_ColumnPropNameInRow="qtyP" msprop:Generator_ColumnPropNameInTable="qtyPColumn" msprop:Generator_UserColumnName="qtyP" type="xs:unsignedLong" minOccurs="0" />
+              <xs:element name="ttlP" msprop:Generator_ColumnVarNameInTable="columnttlP" msprop:Generator_ColumnPropNameInRow="ttlP" msprop:Generator_ColumnPropNameInTable="ttlPColumn" msprop:Generator_UserColumnName="ttlP" type="xs:unsignedLong" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

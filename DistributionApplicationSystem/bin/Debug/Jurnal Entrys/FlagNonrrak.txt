@@ -1,0 +1,19 @@
+GO
+/****** Object:  StoredProcedure [dbo].[Flag_NONRRAK]    Script Date: 10/12/2019 11:03:46 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Flag_NONRRAK]
+	@flagNONRRAK flagNONRRAK_type READONLY
+AS
+BEGIN
+	SET NOCOUNT OFF;
+	
+	UPDATE TblNonRRAKHeader   
+	SET 
+		TglSync=GETDATE()
+	FROM TblNonRRAKHeader A JOIN @flagNONRRAK B ON (A.kodeToko=B.kodeToko AND A.NomerNonRRAK=RIGHT(B.reference, 10))
+
+END

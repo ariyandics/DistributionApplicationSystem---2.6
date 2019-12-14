@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DistributionApplicationSystem.DataSetBKLToko" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAwAAAAJCBAAAQAAAAAgCQDgAAAAAAAEABBA=</HashCode>
+      <FileName>DataSetBKLToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetDetailTO" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAAEQAAAAAgCUBgAAAAAAAMABBA=</HashCode>
+      <FileName>DataSetDetailTO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetDSI" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgiAAAEAwAQAApABAAAQAAAABgCQBoIAAAEAAEABFQ=</HashCode>
+      <FileName>DataSetDSI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetJWBBKL" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwCAAAJABAAAQAAAAAgCQFgAAgAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetJWKBySupplier" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAAAAAEwAAAAJABAAAQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetKKSO" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQwAAAAJABAAAQAAAAAgCQBgAAEAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetLPBReturToko" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAwAAAgJFBAAQQAAAIggDQBgABQAAAAGABBA=</HashCode>
+      <FileName>DataSetLPBReturToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetMstMaxToko" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABBAAQAAAAAgCQBgAAAAAAAGABBI=</HashCode>
+      <FileName>DataSetMstMaxToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetMutasi" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAwABAAJABAABQAAAAAgiQFhAAAAAAAEABBA=</HashCode>
+      <FileName>DataSetMutasi.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetNRBSupplier" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAAAAAwAAAAJABQAAQAAAAAgCUBgAAAACCAESBBA=</HashCode>
+      <FileName>DataSetNRBSupplier.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetNRBtoko" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAwAAAAJABAACQAAAAAgCQBgAAAAAABEABBA=</HashCode>
+      <FileName>DataSetNRBtoko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetPL" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAEwQAAAJABAAAQAAAAAgCQBgAAAIAAEEABBE=</HashCode>
+      <FileName>DataSetPL.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetPlanoDC" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAwAAAAJAhAAAQAAABAgGQBgAAAAAAAEARhA=</HashCode>
+      <FileName>DataSetPlanoDC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetPO" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwCAAAJABAAAQAACAQgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>DataSetPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetRekapTO" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAwAAAAJABAAAQAAAAAgCRBgAAAAgAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSet1" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAA4AEAAJABAAAQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>DataSetRekapUPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSLDCToStore" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAwAAAAJADAACQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSLDCToStoreDetail" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAwABAAJABAAQQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSLSupplierDetail" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwgAAAJABAAAQAAAAAgCQBgAJAAAAAEABBA=</HashCode>
+      <FileName>DataSetSLSupplierDetail.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSLSupplierRekap" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAACwAAAAJABAAQQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>DataSetSLSupplierRekap.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSO" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAwAAAAJAlAEAQAICAAgCQBgAAACAAEGCBFA=</HashCode>
+      <FileName>DataSetSO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSOH" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACAAwACAANABAAAQAAAAggCQRgAAAGAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSOHAll" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAEAAJABAAAQAAIAAgCQBgAAAABAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetSOHReady" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJAJAAAQAAAAAgCQBgAAAAEAAGABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetTO" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAyAAAAJABAAAQAAAARgCQBgAAAAAAAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DataSetUPO" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAApABAAAQAAAAAwCQBgAAAAAAAEABFA=</HashCode>
+      <FileName>DataSetUPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.DSReturSupplier" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAA4AAAAJABAAAQAAAAAgCQBgAAAAAAAEABBg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.dtsNonRRAK" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAgAAwIBAAJABCABQAAAAEgSURgAQAAAgAEABBA=</HashCode>
+      <FileName>dtsNonRRAK.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.Form1" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCABAAECAAAAAEAACCAAAGAAAQAAAAAEQQEAAAAAE=</HashCode>
+      <FileName>Form1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmAdjreason" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAEEAkmAGgBAAFACJpEACGAAUAAUBEECEG0AEgYg=</HashCode>
+      <FileName>FrmAdjreason.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmAdjustmentManual" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECUAEEAkWBmgRQIFICNpERCGIAVAAUBEmCAF0AEgYg=</HashCode>
+      <FileName>FrmAdjustmentManual.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmConfig" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIxAAAAECEGIAAAAICrREAGEAAAAAAxAEAACAIQggA=</HashCode>
+      <FileName>FrmConfig.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmDraftPOGO" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SFlACIAAUDkQgBCABA6VkuQDgGTFAIgBhESAAoF2Ceg=</HashCode>
+      <FileName>FrmDraftPOGO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmDraftUPO" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACRAEAGCAAAEgAAASJhGBDEAAAQCABAEAAAAAAgAA=</HashCode>
+      <FileName>FrmDraftUPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmDSI" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAQGEAkCAAAAAAAACDAAACAAAAJAAAAEAgAgAACAA=</HashCode>
+      <FileName>FrmDSI.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmEditUPO" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AB48ABEE0DlSABACAIaNlHADAESAAKwRhEyiBAEAgSA=</HashCode>
+      <FileName>FrmEditUPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmError" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAAACAAAACAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>FrmError.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmFind" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IGCYGAIIGCMMAAQgABKJhEQWMQAAAAQRlEKAAYAQgZk=</HashCode>
+      <FileName>FrmFind.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmInputSO" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAEEEkCFmgQAIEACJ5FACCAAAAAEBEmACFUAEgQg=</HashCode>
+      <FileName>FrmInputSO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmJWKBKL" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAFFAAoAkCISgBgMQMKJxkBCTACWAggFAEEQABAUgRA=</HashCode>
+      <FileName>FrmJWKBKL.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmJWKSupplierByDC" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAJBAAoIkCIChBgMQMSJxkACTECUAAgFAEAQAAAUgQA=</HashCode>
+      <FileName>FrmJWKSupplierByDC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmJWKToko" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABVAgpAkCIQAAgcQNKJRkZCTAiUAAgFAEEQAAAWgAI=</HashCode>
+      <FileName>FrmJWKToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmKunci" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAECAAAAEIAACAQEAiAAQAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>FrmKunci.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmLockSO" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgwQQCBlCMQsDAgABKRgMADBCdEIpAFkMDIG0yEEQA=</HashCode>
+      <FileName>FrmLockSO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmLogin" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAQAkCCAAAIBARCJBFgCAAAAYAUBAEQIISAgoAA=</HashCode>
+      <FileName>FrmLogin.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmLPBReturSupplier" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BSBUgYWGmCESoDQgAlCFgEwCkA77QIAJlMWgxugAQdg=</HashCode>
+      <FileName>FrmLPBReturSupplier.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmLPBReturToko" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQQIQ0AkHACoBQBAgCJpNkT0I71AMQhkEDAQsgAoVA=</HashCode>
+      <FileName>FrmLPBReturToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmLpbSupplier" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBDQAYUCmGEChLQCCsyJhEACUTb/CMGxVc2o7vIAAUU=</HashCode>
+      <FileName>FrmLpbSupplier.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMasterMaxDC" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAJQSIEKXCGDAAgABQSJiMJCAA0MYBIhgEHgRsIBgUA=</HashCode>
+      <FileName>FrmMasterMaxDC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMasterRak" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAA0CECgAAAAICJlEATSACACIgBkEggAgAEwwA=</HashCode>
+      <FileName>FrmMasterRak.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMasterShelving" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GBIAAAAA0CECAAACQIHJ1sACCYGGAAgBoEAkEAAEgQA=</HashCode>
+      <FileName>FrmMasterShelving.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMasterUser" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAVCEQwAQAgAOJpGYzygigCAihkEAgAgIOogA=</HashCode>
+      <FileName>FrmMasterUser.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMenuUtama" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>V9lFKmxqcCWdDFN4TkSUJFVvygbv4OHOpyUaJROxhiI=</HashCode>
+      <FileName>FrmMenuUtama.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMstMaxToko" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAJQSIkKXiGiABABDQSNgMJCAIUOYAAhgEHgROIAgUo=</HashCode>
+      <FileName>FrmMstMaxToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMutasiDCIn" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQQIQ0AkDACoBQBAkCJhFgT0IoFAIQh0EDAQsgAoUI=</HashCode>
+      <FileName>FrmMutasiDCIn.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMutasiDcOut" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eAgUgYUA8KIjoRUAA0CZkEQD0ja7CIVFDUmBSkRjGZs=</HashCode>
+      <FileName>FrmMutasiDcOut.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMutasiPaket" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEEAIEKkCAIiYKQAECJlMADgEDBAAABguAgBkEFiYg=</HashCode>
+      <FileName>FrmMutasiPaket.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmMutasiStock" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEASgYWKmKASkBgAB8SRgMCCEIQ0IOIBk8mAZsEEQ5M=</HashCode>
+      <FileName>FrmMutasiStock.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmNonRRAK" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EI4QAAkQ0OAGARAAgFiVkMRCjIeAIBQBCUGAQUDFAYE=</HashCode>
+      <FileName>FrmNonRRAK.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmOOS" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAEAECAAAAAAAACBAEACAAAhJAAAAEAAAAAAAAA=</HashCode>
+      <FileName>FrmOOS.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPBToko" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwBAgEgmGMAARAAACGhAUgCBAQEQCBggECBAABDjCo=</HashCode>
+      <FileName>FrmPBToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPlanogramDC" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCiAAA0DsTGygNqAcAjrhFKTCIE3QBMBgVCAUloA0wg=</HashCode>
+      <FileName>FrmPlanogramDC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPOBKL" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAkCAQgBCAAACJBEADAAAAAAAAgEAAAgAUgAA=</HashCode>
+      <FileName>FrmPOBKL.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPOBKLToko" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwAAAAAmDIAARAAACGBAVgCBAQUYCAggECAAANDDCo=</HashCode>
+      <FileName>FrmPOBKLToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPOManual" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SllVlJMQ0HIQoTLIBU6dhOSTtOj3gIgFhGTgAsFyieA=</HashCode>
+      <FileName>FrmPOManual.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPOOtomatis" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBhhBBMQkPASNDoABMa9lnQTFOl0gIwFBOSCAsFiieA=</HashCode>
+      <FileName>FrmPOOtomatis.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmPrintReturSupplier" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAQCEAECpQAAEAAACFBEACAAUgPIAAAEQAABkECgA=</HashCode>
+      <FileName>FrmPrintReturSupplier.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRPTStockDCToko" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEEAECAAAAAAAACDAAACAAEAJIAHAEQAAhAAAAA=</HashCode>
+      <FileName>FrmpRPTStockDCToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRegisterCode" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAUCAAAAAAAACJFEACAAAAIAABgEAgAAAAgAA=</HashCode>
+      <FileName>FrmRegisterCode.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRegisterLPMPDC" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgQUCQAFCEAAAgIYAaBBEECABQAIAABgWAACAgAAAA=</HashCode>
+      <FileName>FrmRegisterLPMPDC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRegisterLPMPToko" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgggUCQAECEAAAgAcAaBBEACAAQQIAABgWAAEAgAAAA=</HashCode>
+      <FileName>FrmRegisterLPMPToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRegisterTOtoStore" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAYEEQECAAAAAAAACJBAACAAEgrJACAEQAAhkBiAA=</HashCode>
+      <FileName>FrmRegisterTOtoStore.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRekapUPO" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADCAQAAkCFRAFMCEACJlFBDAAAEAAQggEgMAAsAgAQ=</HashCode>
+      <FileName>FrmRekapUPO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmReport" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAACABAACAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>FrmReport.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRptLogPatch" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEEAECAAAAAAAACDAAACAAEAJAAAEEAAAAAAAAA=</HashCode>
+      <FileName>FrmRptLogPatch.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRPTSales" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQEEAECAAAAAAAACDAIACAAEAJIACIMQgAhAECAA=</HashCode>
+      <FileName>FrmRPTSales.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRptSODC" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQEEAECAAAAAAAACJFAACAAEgJAAABEAAAkgAiAA=</HashCode>
+      <FileName>FrmRptSODC.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRptSoToko" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAQAEAECAAAEABAACBAAACAIEAJAACAECAAhAACAA=</HashCode>
+      <FileName>FrmRptSoToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmRRAK" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAQUAAcA0OAGQfgQiECFkEVCrAUAoBQFCUKAQUAFEY0=</HashCode>
+      <FileName>FrmRRAK.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmSJReturToko" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQgAQ0AkHAAIBQBAgCJpNET0I7xAMAhkEDAQAgAoFA=</HashCode>
+      <FileName>FrmSJReturToko.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmSLDCToStore" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQEEAECAAAAAAAACBAACCAAEAJIACAESAAhAACAA=</HashCode>
+      <FileName>FrmSLDCToStore.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmSLSupplier" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAQEEQECAAAAAAAACHAAACAEEAJIAAAEQAAhEACAA=</HashCode>
+      <FileName>FrmSLSupplier.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmStockMovement" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgQAEAECAAAAAAAACBAEACAAAgJAAABEAAAAAAICA=</HashCode>
+      <FileName>FrmStockMovement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.frmSumarynonrrak" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCEAFCAIQAAABACBAlACAAEAJAQCBEAQAAAAAAQ=</HashCode>
+      <FileName>frmSumarynonrrak.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmTOfromPB" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAg0j4VAsLIioRAIA0CZkM4D04b9CoUFBUqASkRnGds=</HashCode>
+      <FileName>FrmTOfromPB.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmTokoPOGO" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAEAECUCgAEJAICRlkACAAQAQAAhgkAAAkACAYg=</HashCode>
+      <FileName>FrmTokoPOGO.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmTOManual" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAgVgYUBOLIioREAA0CZkEwD0gb9goUFDUiASkRiGYs=</HashCode>
+      <FileName>FrmTOManual.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmTOmanualNonScanner" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>eAgUgYUAsLIjoxUIA1CZkEQD0wb9ioVFDUmASkRjGZs=</HashCode>
+      <FileName>FrmTOmanualNonScanner.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmTransferOut" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAg0jwVAsLImoRQIE1CZkESC24T9CoUBBUqAS0RlCZs=</HashCode>
+      <FileName>FrmTransferOut.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmUnPaket" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEEAIELkCAIiQKQAECJlMADkEDBAAABguAgBkEFiYg=</HashCode>
+      <FileName>FrmUnPaket.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.FrmValidasi" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIECAIIAAEAAjJJEADAAAgAAAAEIAAAIAAgAA=</HashCode>
+      <FileName>FrmValidasi.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.My.MyApplication" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DistributionApplicationSystem.My.MySettings" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABAAIAAABAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="DistributionApplicationSystem.configMdl" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAgAACACAACIigABhKBAAAAAAiQBQABAEAAAgAAAA=</HashCode>
+      <FileName>configMdl.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.ImportExportXls" Collapsed="true">
+    <Position X="2.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ImportExportXls.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.MdlPass" Collapsed="true">
+    <Position X="4" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAIAAAAAQAAAAAAAAAABAACCAoUEAAAAAAAA=</HashCode>
+      <FileName>MdlPass.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.MdlTerbilang" Collapsed="true">
+    <Position X="5.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAEAQAAAAEAAAAAACAAAAAAAAAAAEIAAAA=</HashCode>
+      <FileName>MdlTerbilang.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.MdlUpdate" Collapsed="true">
+    <Position X="7.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAQAAAAAAKADAAAAAJAAAEACAAAA=</HashCode>
+      <FileName>MdlUpdate.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.PublicMod" Collapsed="true">
+    <Position X="11" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nQBuoFhKARvasDfoHggNUUAZsg4cnzABNQsoCDTWFDI=</HashCode>
+      <FileName>PublicMod.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.My.MySettingsProperty" Collapsed="true">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DistributionApplicationSystem.My.Resources.Resources" Collapsed="true">
+    <Position X="12.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

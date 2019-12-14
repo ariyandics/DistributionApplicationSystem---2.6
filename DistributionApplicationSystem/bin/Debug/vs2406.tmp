@@ -1,0 +1,700 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DistributionApplicationSystem
+</name>
+</assembly>
+<members>
+<member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LPBRekapDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LpbDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturRekapDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LPBRekapRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LpbDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturRekapRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LPBRekapRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.LpbDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturRekapRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko.ReturDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetLPBReturToko">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStoreDetail.DTSLDCToStoreDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStoreDetail.DTSLDCToStoreDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStoreDetail.DTSLDCToStoreDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStoreDetail">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierRekap.DataTableSLSupplierRekapDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierRekap.DataTableSLSupplierRekapRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierRekap.DataTableSLSupplierRekapRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierRekap">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataTableSOHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataStockMoveDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DSStockTokoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataTableSOHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataStockMoveRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DSStockTokoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataTableSOHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DataStockMoveRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH.DSStockTokoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOH">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSet1.RekapUPODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSet1.RekapUPORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSet1.RekapUPORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStore.DtSLDCToStoreDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStore.DtSLDCToStoreRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStore.DtSLDCToStoreRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLDCToStore">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWKBySupplier.Table_JWKBySupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWKBySupplier.Table_JWKBySupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWKBySupplier.Table_JWKBySupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWKBySupplier">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetTO.BPBDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetTO.BPBRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetTO.BPBRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetTO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.DataSetSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptRekapSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptDetailSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.DataSetSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptRekapSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptDetailSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.DataSetSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptRekapSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO.TblRptDetailSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakHeaderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakHeaderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakHeaderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtNonRrakDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK.dtRRAKDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.dtsNonRRAK">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBtoko.DataTableNRBTokoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBtoko.DataTableNRBTokoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBtoko.DataTableNRBTokoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBtoko">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetRekapTO.DataTableRekapTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetRekapTO.DataTableRekapTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetRekapTO.DataTableRekapTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetRekapTO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetBKLToko.TblPOBKLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetBKLToko.TblPOBKLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetBKLToko.TblPOBKLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetBKLToko">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMstMaxToko.DataSetMaxTokoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMstMaxToko.DataSetMaxTokoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMstMaxToko.DataSetMaxTokoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMstMaxToko">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblOOSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPL2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblOOSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPL2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblOOSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL.TblPL2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPL">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPO.PODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPO.PORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPO.PORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetKKSO.TblKKSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetKKSO.TblKKSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetKKSO.TblKKSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetKKSO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHReady.DataTableSOHReadyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHReady.DataTableSOHReadyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHReady.DataTableSOHReadyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHReady">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DSReturSupplier.ReturBulananDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DSReturSupplier.ReturBulananRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DSReturSupplier.ReturBulananRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DSReturSupplier">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:DistributionApplicationSystem.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DistributionApplicationSystem.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDetailTO.DataTableDetailTODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDetailTO.DataTableDetailTORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDetailTO.DataTableDetailTORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDetailTO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBSupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBRekapDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBSupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBRekapRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBSupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBRekapRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier.TblNRBDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetNRBSupplier">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetUPO.DataSetUPODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetUPO.DataSetUPORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetUPO.DataSetUPORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetUPO">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.DataTableMutasiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.TblMutasiOUTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.DataTableMutasiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.TblMutasiOUTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.DataTableMutasiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi.TblMutasiOUTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetMutasi">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierDetail.DataTableSLSupplierDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierDetail.DataTableSLSupplierDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierDetail.DataTableSLSupplierDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSLSupplierDetail">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHAll.DataTableSOHAllDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHAll.DataTableSOHAllRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHAll.DataTableSOHAllRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetSOHAll">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DataTableDSIDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DSSalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailStrukDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DataTableDSIRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DSSalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailStrukRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DataTableDSIRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DSSalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailStrukRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI.DsDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetDSI">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWBBKL.JWKBKLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWBBKL.JWKBKLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWBBKL.JWKBKLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetJWBBKL">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.PlanoDCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.DataSetLogPatchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.PlanoDCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.DataSetLogPatchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.PlanoDCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC.DataSetLogPatchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DistributionApplicationSystem.DataSetPlanoDC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

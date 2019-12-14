@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetUPO" targetNamespace="http://tempuri.org/DataSetUPO.xsd" xmlns:mstns="http://tempuri.org/DataSetUPO.xsd" xmlns="http://tempuri.org/DataSetUPO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetUPO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetUPO" msprop:Generator_UserDSName="DataSetUPO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetUPO" msprop:Generator_TableClassName="DataSetUPODataTable" msprop:Generator_TableVarName="tableDataSetUPO" msprop:Generator_TablePropName="_DataSetUPO" msprop:Generator_RowDeletingName="DataSetUPORowDeleting" msprop:Generator_RowChangingName="DataSetUPORowChanging" msprop:Generator_RowEvHandlerName="DataSetUPORowChangeEventHandler" msprop:Generator_RowDeletedName="DataSetUPORowDeleted" msprop:Generator_UserTableName="DataSetUPO" msprop:Generator_RowChangedName="DataSetUPORowChanged" msprop:Generator_RowEvArgName="DataSetUPORowChangeEvent" msprop:Generator_RowClassName="DataSetUPORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdDC" msprop:Generator_ColumnVarNameInTable="columnIdDC" msprop:Generator_ColumnPropNameInRow="IdDC" msprop:Generator_ColumnPropNameInTable="IdDCColumn" msprop:Generator_UserColumnName="IdDC" type="xs:long" minOccurs="0" />
+              <xs:element name="NomorUPO" msprop:Generator_ColumnVarNameInTable="columnNomorUPO" msprop:Generator_ColumnPropNameInRow="NomorUPO" msprop:Generator_ColumnPropNameInTable="NomorUPOColumn" msprop:Generator_UserColumnName="NomorUPO" type="xs:long" minOccurs="0" />
+              <xs:element name="MinorSupplier" msprop:Generator_ColumnVarNameInTable="columnMinorSupplier" msprop:Generator_ColumnPropNameInRow="MinorSupplier" msprop:Generator_ColumnPropNameInTable="MinorSupplierColumn" msprop:Generator_UserColumnName="MinorSupplier" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NamaSupplier" msprop:Generator_ColumnVarNameInTable="columnNamaSupplier" msprop:Generator_ColumnPropNameInRow="NamaSupplier" msprop:Generator_ColumnPropNameInTable="NamaSupplierColumn" msprop:Generator_UserColumnName="NamaSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeProduk" msprop:Generator_ColumnVarNameInTable="columnKodeProduk" msprop:Generator_ColumnPropNameInRow="KodeProduk" msprop:Generator_ColumnPropNameInTable="KodeProdukColumn" msprop:Generator_UserColumnName="KodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaPanjang" msprop:Generator_ColumnVarNameInTable="columnNamaPanjang" msprop:Generator_ColumnPropNameInRow="NamaPanjang" msprop:Generator_ColumnPropNameInTable="NamaPanjangColumn" msprop:Generator_UserColumnName="NamaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeTag" msprop:Generator_ColumnVarNameInTable="columnKodeTag" msprop:Generator_ColumnPropNameInRow="KodeTag" msprop:Generator_ColumnPropNameInTable="KodeTagColumn" msprop:Generator_UserColumnName="KodeTag" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesQty3Bln" msprop:Generator_ColumnVarNameInTable="columnSalesQty3Bln" msprop:Generator_ColumnPropNameInRow="SalesQty3Bln" msprop:Generator_ColumnPropNameInTable="SalesQty3BlnColumn" msprop:Generator_UserColumnName="SalesQty3Bln" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesQty2Bln" msprop:Generator_ColumnVarNameInTable="columnSalesQty2Bln" msprop:Generator_ColumnPropNameInRow="SalesQty2Bln" msprop:Generator_ColumnPropNameInTable="SalesQty2BlnColumn" msprop:Generator_UserColumnName="SalesQty2Bln" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesQty1Bln" msprop:Generator_ColumnVarNameInTable="columnSalesQty1Bln" msprop:Generator_ColumnPropNameInRow="SalesQty1Bln" msprop:Generator_ColumnPropNameInTable="SalesQty1BlnColumn" msprop:Generator_UserColumnName="SalesQty1Bln" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinOrder" msprop:Generator_ColumnVarNameInTable="columnMinOrder" msprop:Generator_ColumnPropNameInRow="MinOrder" msprop:Generator_ColumnPropNameInTable="MinOrderColumn" msprop:Generator_UserColumnName="MinOrder" type="xs:long" minOccurs="0" />
+              <xs:element name="MaxStok" msprop:Generator_ColumnVarNameInTable="columnMaxStok" msprop:Generator_ColumnPropNameInRow="MaxStok" msprop:Generator_ColumnPropNameInTable="MaxStokColumn" msprop:Generator_UserColumnName="MaxStok" type="xs:long" minOccurs="0" />
+              <xs:element name="StokOH" msprop:Generator_ColumnVarNameInTable="columnStokOH" msprop:Generator_ColumnPropNameInRow="StokOH" msprop:Generator_ColumnPropNameInTable="StokOHColumn" msprop:Generator_UserColumnName="StokOH" type="xs:long" minOccurs="0" />
+              <xs:element name="OutPBToko" msprop:Generator_ColumnVarNameInTable="columnOutPBToko" msprop:Generator_ColumnPropNameInRow="OutPBToko" msprop:Generator_ColumnPropNameInTable="OutPBTokoColumn" msprop:Generator_UserColumnName="OutPBToko" type="xs:long" minOccurs="0" />
+              <xs:element name="OutPOSupplier" msprop:Generator_ColumnVarNameInTable="columnOutPOSupplier" msprop:Generator_ColumnPropNameInRow="OutPOSupplier" msprop:Generator_ColumnPropNameInTable="OutPOSupplierColumn" msprop:Generator_UserColumnName="OutPOSupplier" type="xs:long" minOccurs="0" />
+              <xs:element name="QtyUPO" msprop:Generator_ColumnVarNameInTable="columnQtyUPO" msprop:Generator_ColumnPropNameInRow="QtyUPO" msprop:Generator_ColumnPropNameInTable="QtyUPOColumn" msprop:Generator_UserColumnName="QtyUPO" type="xs:long" minOccurs="0" />
+              <xs:element name="HargaBeliTerakhir" msprop:Generator_ColumnVarNameInTable="columnHargaBeliTerakhir" msprop:Generator_ColumnPropNameInRow="HargaBeliTerakhir" msprop:Generator_ColumnPropNameInTable="HargaBeliTerakhirColumn" msprop:Generator_UserColumnName="HargaBeliTerakhir" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Disk1" msprop:Generator_ColumnVarNameInTable="columnDisk1" msprop:Generator_ColumnPropNameInRow="Disk1" msprop:Generator_ColumnPropNameInTable="Disk1Column" msprop:Generator_UserColumnName="Disk1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Disk2" msprop:Generator_ColumnVarNameInTable="columnDisk2" msprop:Generator_ColumnPropNameInRow="Disk2" msprop:Generator_ColumnPropNameInTable="Disk2Column" msprop:Generator_UserColumnName="Disk2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RpUPO" msprop:Generator_ColumnVarNameInTable="columnRpUPO" msprop:Generator_ColumnPropNameInRow="RpUPO" msprop:Generator_ColumnPropNameInTable="RpUPOColumn" msprop:Generator_UserColumnName="RpUPO" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

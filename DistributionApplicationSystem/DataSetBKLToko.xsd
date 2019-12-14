@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBKLToko" targetNamespace="http://tempuri.org/DataSetBKLToko.xsd" xmlns:mstns="http://tempuri.org/DataSetBKLToko.xsd" xmlns="http://tempuri.org/DataSetBKLToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBKLToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBKLToko" msprop:Generator_UserDSName="DataSetBKLToko">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblPOBKL" msprop:Generator_TableClassName="TblPOBKLDataTable" msprop:Generator_TableVarName="tableTblPOBKL" msprop:Generator_TablePropName="TblPOBKL" msprop:Generator_RowDeletingName="TblPOBKLRowDeleting" msprop:Generator_RowChangingName="TblPOBKLRowChanging" msprop:Generator_RowEvHandlerName="TblPOBKLRowChangeEventHandler" msprop:Generator_RowDeletedName="TblPOBKLRowDeleted" msprop:Generator_UserTableName="TblPOBKL" msprop:Generator_RowChangedName="TblPOBKLRowChanged" msprop:Generator_RowEvArgName="TblPOBKLRowChangeEvent" msprop:Generator_RowClassName="TblPOBKLRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tglpo" msprop:Generator_ColumnVarNameInTable="columntglpo" msprop:Generator_ColumnPropNameInRow="tglpo" msprop:Generator_ColumnPropNameInTable="tglpoColumn" msprop:Generator_UserColumnName="tglpo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="kodeSupplier" msprop:Generator_ColumnVarNameInTable="columnkodeSupplier" msprop:Generator_ColumnPropNameInRow="kodeSupplier" msprop:Generator_ColumnPropNameInTable="kodeSupplierColumn" msprop:Generator_UserColumnName="kodeSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="namaSupplier" msprop:Generator_ColumnVarNameInTable="columnnamaSupplier" msprop:Generator_ColumnPropNameInRow="namaSupplier" msprop:Generator_ColumnPropNameInTable="namaSupplierColumn" msprop:Generator_UserColumnName="namaSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeproduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeproduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtypo" msprop:Generator_ColumnVarNameInTable="columnqtypo" msprop:Generator_ColumnPropNameInRow="qtypo" msprop:Generator_ColumnPropNameInTable="qtypoColumn" msprop:Generator_UserColumnName="qtypo" type="xs:long" minOccurs="0" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="disk1" msprop:Generator_ColumnVarNameInTable="columndisk1" msprop:Generator_ColumnPropNameInRow="disk1" msprop:Generator_ColumnPropNameInTable="disk1Column" msprop:Generator_UserColumnName="disk1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="disk2" msprop:Generator_ColumnVarNameInTable="columndisk2" msprop:Generator_ColumnPropNameInRow="disk2" msprop:Generator_ColumnPropNameInTable="disk2Column" msprop:Generator_UserColumnName="disk2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="harganet" msprop:Generator_ColumnVarNameInTable="columnharganet" msprop:Generator_ColumnPropNameInRow="harganet" msprop:Generator_ColumnPropNameInTable="harganetColumn" msprop:Generator_UserColumnName="harganet" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pajak" msprop:Generator_ColumnVarNameInTable="columnpajak" msprop:Generator_ColumnPropNameInRow="pajak" msprop:Generator_ColumnPropNameInTable="pajakColumn" msprop:Generator_UserColumnName="pajak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="hargakotor" msprop:Generator_ColumnVarNameInTable="columnhargakotor" msprop:Generator_ColumnPropNameInRow="hargakotor" msprop:Generator_ColumnPropNameInTable="hargakotorColumn" msprop:Generator_UserColumnName="hargakotor" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

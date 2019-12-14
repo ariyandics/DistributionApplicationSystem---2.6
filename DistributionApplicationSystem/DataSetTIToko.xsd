@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetTIToko" targetNamespace="http://tempuri.org/DataSetTIToko.xsd" xmlns:mstns="http://tempuri.org/DataSetTIToko.xsd" xmlns="http://tempuri.org/DataSetTIToko.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetTIToko" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetTIToko" msprop:Generator_UserDSName="DataSetTIToko">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtTIToko" msprop:Generator_TableClassName="dtTITokoDataTable" msprop:Generator_TableVarName="tabledtTIToko" msprop:Generator_TablePropName="dtTIToko" msprop:Generator_RowDeletingName="dtTITokoRowDeleting" msprop:Generator_RowChangingName="dtTITokoRowChanging" msprop:Generator_RowEvHandlerName="dtTITokoRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTITokoRowDeleted" msprop:Generator_UserTableName="dtTIToko" msprop:Generator_RowChangedName="dtTITokoRowChanged" msprop:Generator_RowEvArgName="dtTITokoRowChangeEvent" msprop:Generator_RowClassName="dtTITokoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="namaDC" msprop:Generator_ColumnVarNameInTable="columnnamaDC" msprop:Generator_ColumnPropNameInRow="namaDC" msprop:Generator_ColumnPropNameInTable="namaDCColumn" msprop:Generator_UserColumnName="namaDC" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaCluster" msprop:Generator_ColumnVarNameInTable="columnNamaCluster" msprop:Generator_ColumnPropNameInRow="NamaCluster" msprop:Generator_ColumnPropNameInTable="NamaClusterColumn" msprop:Generator_UserColumnName="NamaCluster" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeToko" msprop:Generator_ColumnVarNameInTable="columnKodeToko" msprop:Generator_ColumnPropNameInRow="KodeToko" msprop:Generator_ColumnPropNameInTable="KodeTokoColumn" msprop:Generator_UserColumnName="KodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaToko" msprop:Generator_ColumnVarNameInTable="columnNamaToko" msprop:Generator_ColumnPropNameInRow="NamaToko" msprop:Generator_ColumnPropNameInTable="NamaTokoColumn" msprop:Generator_UserColumnName="NamaToko" type="xs:string" minOccurs="0" />
+              <xs:element name="NomorTO" msprop:Generator_ColumnVarNameInTable="columnNomorTO" msprop:Generator_ColumnPropNameInRow="NomorTO" msprop:Generator_ColumnPropNameInTable="NomorTOColumn" msprop:Generator_UserColumnName="NomorTO" type="xs:long" minOccurs="0" />
+              <xs:element name="tglTo" msprop:Generator_ColumnVarNameInTable="columntglTo" msprop:Generator_ColumnPropNameInRow="tglTo" msprop:Generator_ColumnPropNameInTable="tglToColumn" msprop:Generator_UserColumnName="tglTo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SKU" msprop:Generator_ColumnVarNameInTable="columnSKU" msprop:Generator_ColumnPropNameInRow="SKU" msprop:Generator_ColumnPropNameInTable="SKUColumn" msprop:Generator_UserColumnName="SKU" type="xs:string" minOccurs="0" />
+              <xs:element name="Deskripsi" msprop:Generator_ColumnVarNameInTable="columnDeskripsi" msprop:Generator_ColumnPropNameInRow="Deskripsi" msprop:Generator_ColumnPropNameInTable="DeskripsiColumn" msprop:Generator_UserColumnName="Deskripsi" type="xs:string" minOccurs="0" />
+              <xs:element name="qtyTO" msprop:Generator_ColumnVarNameInTable="columnqtyTO" msprop:Generator_ColumnPropNameInRow="qtyTO" msprop:Generator_ColumnPropNameInTable="qtyTOColumn" msprop:Generator_UserColumnName="qtyTO" type="xs:long" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="TglTI" msprop:Generator_ColumnVarNameInTable="columnTglTI" msprop:Generator_ColumnPropNameInRow="TglTI" msprop:Generator_ColumnPropNameInTable="TglTIColumn" msprop:Generator_UserColumnName="TglTI" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NomorTI" msprop:Generator_ColumnVarNameInTable="columnNomorTI" msprop:Generator_ColumnPropNameInRow="NomorTI" msprop:Generator_ColumnPropNameInTable="NomorTIColumn" msprop:Generator_UserColumnName="NomorTI" type="xs:long" minOccurs="0" />
+              <xs:element name="SLD" msprop:Generator_ColumnVarNameInTable="columnSLD" msprop:Generator_ColumnPropNameInRow="SLD" msprop:Generator_ColumnPropNameInTable="SLDColumn" msprop:Generator_UserColumnName="SLD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

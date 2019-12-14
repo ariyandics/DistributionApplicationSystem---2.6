@@ -1,0 +1,86 @@
+GO
+/****** Object:  StoredProcedure [dbo].[Select_POTNONRRAK]    Script Date: 10/12/2019 11:03:46 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Select_POTNONRRAK]
+      
+AS
+BEGIN
+	SET NOCOUNT ON;
+	-- Versi 2.2
+	
+	DECLARE @JournalGroup varchar(10)
+	DECLARE @CoaAR varchar(10)
+	DECLARE @CoaCode varchar(10)
+	
+	-- POTONG SALES RRAK
+	SET @JournalGroup = 'RRAK' 
+	
+	SELECT TOP (1) @CoaCode='11040004'
+	SELECT TOP (1) @CoaAR='11020103'
+	
+	DECLARE @tblJournal TABLE(journal_id bigint, journal_group varchar(10), posting_date date, coa_code varchar(10), location_code varchar(7), partner_code varchar(7), reference varchar(60), [description] varchar(60), debit float, credit float);
+	DECLARE @tblRRAK TABLE(tglPot date, kodeToko varchar(7), NoNR int, Nominal bigint)
+
+	-- Create Temporary
+	INSERT INTO @tblRRAK 
+	SELECT TglPotSales, kodeToko, NomerNonRRAK, NilaiPotSalesUntukSaldo FROM TblPotongNonRRAKDetail 
+	WHERE TglSync IS NULL
+
+	DECLARE @IdPerusahaan int
+	DECLARE @idDc int
+	DECLARE @tipeDoc int
+	DECLARE @kodeStatusToko char(1) 
+	
+	SET @tipeDoc = 25 -- 24 POTONG RRAK TOKO
+
+	DECLARE @tglPot date
+	DECLARE @kodeToko varchar(7)
+	DECLARE @idLoop int
+	DECLARE @nominal bigint
+	DECLARE cur cursor FOR
+		SELECT TglPot, kodeToko, NoNR, Nominal FROM @tblRRAK 
+
+	OPEN cur
+		FETCH NEXT FROM cur INTO @tglPot, @kodeToko, @idLoop, @nominal
+	
+	WHILE @@FETCH_STATUS=0
+		BEGIN
+	
+			SELECT TOP (1) @kodeStatusToko=kodeStatusToko, @idDc=idDc FROM MstToko WHERE kodeToko=@kodeToko  
+			IF @kodeStatusToko='R'
+				BEGIN
+					 SELECT TOP (1) @IdPerusahaan=IdPerusahaan FROM MstDC WHERE idDC=@idDc  
+				END
+			ELSE
+				BEGIN
+					SET @IdPerusahaan=@kodeToko  
+				END 
+
+
+			-- PIUTANG LAIN-LAIN
+			INSERT INTO @tblJournal (journal_id, journal_group, posting_date, coa_code
+				,location_code, partner_code, reference, [description], debit, credit)
+				VALUES (LTRIM(STR(@idDc)) + LTRIM(STR(@tipeDoc))  + CONVERT(varchar(8), @tglPot, 112), @JournalGroup, @tglPot, @CoaCode, 
+				@kodeToko, @idPerusahaan, 'PNR'+LTRIM(STR(@idLoop)), 'POTONG NON RRAK', @nominal, 0) 
+					
+			-- PIUTANG USAHA TOKO
+				INSERT INTO @tblJournal (journal_id, journal_group, posting_date, coa_code
+				,location_code, partner_code, reference, [description], debit, credit)
+				VALUES (LTRIM(STR(@idDc)) + LTRIM(STR(@tipeDoc))  + CONVERT(varchar(8), @tglPot, 112), @JournalGroup, @tglPot, @CoaAR, 
+				@kodeToko, @idPerusahaan, 'PNR'+LTRIM(STR(@idLoop)), 'POTONG NON RRAK', 0,  @nominal) 
+					  
+		
+			FETCH NEXT FROM cur INTO @tglPot, @kodeToko, @idLoop, @nominal
+		END
+	CLOSE cur
+	DEALLOCATE cur 
+
+	DELETE FROM @tblJournal WHERE debit=0 AND credit=0
+	-- Query Table
+    SELECT * FROM @tblJournal 
+	  
+END 

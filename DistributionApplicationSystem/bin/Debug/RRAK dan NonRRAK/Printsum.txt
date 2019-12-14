@@ -1,0 +1,102 @@
+GO
+/****** Object:  StoredProcedure [dbo].[spPrintsumaryAnggaranKAS]    Script Date: 10/12/2019 11:03:46 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure [dbo].[spPrintsumaryAnggaranKAS] @statusProsses as varchar(20), @date1 date, @date2 date
+as
+begin
+	declare @iddc int
+	select @iddc =iddc from mstdc where statusData =1
+
+	if @statusProsses = 'NonRRAK'
+		begin
+		Select a.NoAliasNR,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveToko) as TglApproveToko,convert(date, a.TglApproveWADS) as TglApproveWADS ,a.TotRealToko,a.TotRealWADS,a.TotNilaiSelisih from TblNonRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2  order by a.TglCreate
+		end
+	else
+	if @statusProsses = 'NonRRAKDetail'
+		begin
+		
+		Select convert(date,c.TglCreate) as TglCreate,a.KodeToko,b.namaToko, c.NoAliasNR,a.KodeCOA,a.NamaCOA,a.NilaiRealToko,a.NilaiRealWADS,a.NilaiSelisih,a.Keterangan from TblNonRRAKDetail a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		inner join TblNonRRAKHeader c on c.KodeToko =a.KodeToko and c.NomerNonRRAK=a.NomerNonRRAK
+		where convert(date,c.TglCreate) between @date1 and @date2 order by c.TglCreate
+		end
+	else
+	if @statusProsses = 'RRAKRealisasi'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 order by  a.TglCreate
+		end
+		else
+	if @statusProsses = 'RRAKEstimasi'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 order by  a.TglCreate
+		end
+		else
+	if @statusProsses = 'NonRRAKoutdetail'
+		begin
+		Select convert(date,c.TglCreate) as TglCreate,a.KodeToko,b.namaToko, c.NoAliasNR,a.KodeCOA,a.NamaCOA,a.NilaiRealToko,a.NilaiRealWADS,a.NilaiSelisih,a.Keterangan from TblNonRRAKDetail a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		inner join TblNonRRAKHeader c on c.KodeToko =a.KodeToko and c.NomerNonRRAK=a.NomerNonRRAK
+		where convert(date,c.TglCreate) between @date1 and @date2 and c.StatusRealisasi = 2 order by c.TglCreate 
+		end
+		else
+	if @statusProsses = 'NonRRAKappvdetail'
+		begin
+		Select convert(date,c.TglCreate) as TglCreate,a.KodeToko,b.namaToko, c.NoAliasNR,a.KodeCOA,a.NamaCOA,a.NilaiRealToko,a.NilaiRealWADS,a.NilaiSelisih,a.Keterangan from TblNonRRAKDetail a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		inner join TblNonRRAKHeader c on c.KodeToko =a.KodeToko and c.NomerNonRRAK=a.NomerNonRRAK
+		where convert(date,c.TglCreate) between @date1 and @date2 and c.StatusRealisasi > 2 and c.StatusRealisasi not in(9) order by c.TglCreate
+		end
+		else
+	if @statusProsses = 'NonRRAKouthead'
+		begin
+		Select a.NoAliasNR,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveToko) as TglApproveToko,convert(date, a.TglApproveWADS) as TglApproveWADS ,a.TotRealToko,a.TotRealWADS,a.TotNilaiSelisih from TblNonRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusRealisasi =2 order by a.TglCreate
+		end
+		else
+	if @statusProsses = 'NonRRAKapphead'
+		begin
+		Select a.NoAliasNR,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveToko) as TglApproveToko,convert(date, a.TglApproveWADS) as TglApproveWADS ,a.TotRealToko,a.TotRealWADS,a.TotNilaiSelisih from TblNonRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusRealisasi >2 and a.StatusRealisasi not in(9)  order by a.TglCreate
+		end
+		else
+	if @statusProsses = 'RRAKrekEstimasiOut'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusEstimasi =1 and a.StatusEstimasi not in(9) order by  a.TglCreate
+		end
+		else
+	if @statusProsses = 'RRAKrekRealisasiOut'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusRealisasi =1 and a.StatusRealisasi not in(9) order by  a.TglCreate
+		end
+		else
+	if @statusProsses = 'RRAKrekEstimasiApp'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusEstimasi > 1 and a.StatusEstimasi not in(9)  order by  a.TglCreate
+		end
+		else
+	if @statusProsses = 'RRAKrekRealisasiApp'
+		begin
+		SELECT a.NomerRRAK,a.KodeToko,b.namaToko,convert(date,a.TglCreate) as TglCreate,convert(date,a.TglApproveEstimasi) as TglApproveEstimasi,convert(date,a.TglApproveRealisasi) as TglApproveRealisasi,a.TotEstimasi,a.TotRealisasi,a.PengembalianRRAK,a.KesalahanRRAK,a.CaraBayar FROM TblRRAKHeader a
+		inner join Msttoko b on a.KodeToko =b.KodeToko 
+		where convert(date,a.TglCreate) between @date1 and @date2 and a.StatusRealisasi >1 and a.StatusRealisasi not in(9) order by  a.TglCreate
+		end
+	end

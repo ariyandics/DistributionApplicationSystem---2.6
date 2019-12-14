@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPL" targetNamespace="http://tempuri.org/DataSetPL.xsd" xmlns:mstns="http://tempuri.org/DataSetPL.xsd" xmlns="http://tempuri.org/DataSetPL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetPL" msprop:Generator_UserDSName="DataSetPL">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblPL" msprop:Generator_TableClassName="TblPLDataTable" msprop:Generator_TableVarName="tableTblPL" msprop:Generator_RowChangedName="TblPLRowChanged" msprop:Generator_TablePropName="TblPL" msprop:Generator_RowDeletingName="TblPLRowDeleting" msprop:Generator_RowChangingName="TblPLRowChanging" msprop:Generator_RowEvHandlerName="TblPLRowChangeEventHandler" msprop:Generator_RowDeletedName="TblPLRowDeleted" msprop:Generator_RowClassName="TblPLRow" msprop:Generator_UserTableName="TblPL" msprop:Generator_RowEvArgName="TblPLRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="barcode" msprop:Generator_ColumnVarNameInTable="columnbarcode" msprop:Generator_ColumnPropNameInRow="barcode" msprop:Generator_ColumnPropNameInTable="barcodeColumn" msprop:Generator_UserColumnName="barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeproduk" msprop:Generator_ColumnPropNameInRow="kodeproduk" msprop:Generator_ColumnPropNameInTable="kodeprodukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:long" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtyPicking" msprop:Generator_ColumnVarNameInTable="columnqtypicking" msprop:Generator_ColumnPropNameInRow="qtypicking" msprop:Generator_ColumnPropNameInTable="qtypickingColumn" msprop:Generator_UserColumnName="qtyPicking" type="xs:long" minOccurs="0" />
+              <xs:element name="plano" msprop:Generator_ColumnVarNameInTable="columnplano" msprop:Generator_ColumnPropNameInRow="plano" msprop:Generator_ColumnPropNameInTable="planoColumn" msprop:Generator_UserColumnName="plano" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblOOS" msprop:Generator_TableClassName="TblOOSDataTable" msprop:Generator_TableVarName="tableTblOOS" msprop:Generator_TablePropName="TblOOS" msprop:Generator_RowDeletingName="TblOOSRowDeleting" msprop:Generator_RowChangingName="TblOOSRowChanging" msprop:Generator_RowEvHandlerName="TblOOSRowChangeEventHandler" msprop:Generator_RowDeletedName="TblOOSRowDeleted" msprop:Generator_UserTableName="TblOOS" msprop:Generator_RowChangedName="TblOOSRowChanged" msprop:Generator_RowEvArgName="TblOOSRowChangeEvent" msprop:Generator_RowClassName="TblOOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" msprop:Generator_UserColumnName="Tanggal" type="xs:string" minOccurs="0" />
+              <xs:element name="oos" msprop:Generator_ColumnVarNameInTable="columnoos" msprop:Generator_ColumnPropNameInRow="oos" msprop:Generator_ColumnPropNameInTable="oosColumn" msprop:Generator_UserColumnName="oos" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblPL2" msprop:Generator_TableClassName="TblPL2DataTable" msprop:Generator_TableVarName="tableTblPL2" msprop:Generator_RowChangedName="TblPL2RowChanged" msprop:Generator_TablePropName="TblPL2" msprop:Generator_RowDeletingName="TblPL2RowDeleting" msprop:Generator_RowChangingName="TblPL2RowChanging" msprop:Generator_RowEvHandlerName="TblPL2RowChangeEventHandler" msprop:Generator_RowDeletedName="TblPL2RowDeleted" msprop:Generator_RowClassName="TblPL2Row" msprop:Generator_UserTableName="TblPL2" msprop:Generator_RowEvArgName="TblPL2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kodeToko" msprop:Generator_ColumnVarNameInTable="columnkodeToko" msprop:Generator_ColumnPropNameInRow="kodeToko" msprop:Generator_ColumnPropNameInTable="kodeTokoColumn" msprop:Generator_UserColumnName="kodeToko" type="xs:string" minOccurs="0" />
+              <xs:element name="namaToko" msprop:Generator_ColumnVarNameInTable="columnnamaToko" msprop:Generator_ColumnPropNameInRow="namaToko" msprop:Generator_ColumnPropNameInTable="namaTokoColumn" msprop:Generator_UserColumnName="namaToko" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtyPicking" msprop:Generator_ColumnVarNameInTable="columnqtyPicking" msprop:Generator_ColumnPropNameInRow="qtyPicking" msprop:Generator_ColumnPropNameInTable="qtyPickingColumn" msprop:Generator_UserColumnName="qtyPicking" type="xs:long" minOccurs="0" />
+              <xs:element name="nomorpicking" msprop:Generator_ColumnVarNameInTable="columnnomorpicking" msprop:Generator_ColumnPropNameInRow="nomorpicking" msprop:Generator_ColumnPropNameInTable="nomorpickingColumn" msprop:Generator_UserColumnName="nomorpicking" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

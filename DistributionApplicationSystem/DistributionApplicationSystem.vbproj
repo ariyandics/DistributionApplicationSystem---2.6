@@ -1,0 +1,1479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A49C6D6-76E6-4232-B056-AAB1F7A7A0F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DistributionApplicationSystem.My.MyApplication</StartupObject>
+    <RootNamespace>DistributionApplicationSystem</RootNamespace>
+    <AssemblyName>DistributionApplicationSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DistributionApplicationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DistributionApplicationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6124C7B8A561E33E083AFC4E723D9478E2C0DE2E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DistributionApplicationSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Two-storied house SH.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.4.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>Resources\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="configMdl.vb" />
+    <Compile Include="DataSetBKLToko.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBKLToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetBKLToko.vb">
+      <DependentUpon>DataSetBKLToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDetailTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDetailTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDetailTO.vb">
+      <DependentUpon>DataSetDetailTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDSI.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDSI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDSI.vb">
+      <DependentUpon>DataSetDSI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetJWBBKL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetJWBBKL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetJWKBySupplier1.Designer.vb">
+      <DependentUpon>DataSetJWKBySupplier.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DataSetKartuStok.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetKartuStok.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetKKSO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetKKSO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetLPBReturToko.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLPBReturToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetLPBReturToko.vb">
+      <DependentUpon>DataSetLPBReturToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMoveCabang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMoveCabang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMoveCabang.vb">
+      <DependentUpon>DataSetMoveCabang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMstMaxToko.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMstMaxToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMstMaxToko.vb">
+      <DependentUpon>DataSetMstMaxToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMutasi.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMutasi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMutasi.vb">
+      <DependentUpon>DataSetMutasi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetNRBSupplier.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNRBSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetNRBSupplier.vb">
+      <DependentUpon>DataSetNRBSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetNRBtoko.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNRBtoko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetNRBtoko.vb">
+      <DependentUpon>DataSetNRBtoko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPL.vb">
+      <DependentUpon>DataSetPL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPlanoDC.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPlanoDC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPlanoDC.vb">
+      <DependentUpon>DataSetPlanoDC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPO.vb">
+      <DependentUpon>DataSetPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRekapTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRekapTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRekapUPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRekapUPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRekapUPO.vb">
+      <DependentUpon>DataSetRekapUPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLDCToStore.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSLDCToStore.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLDCToStoreDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSLDCToStoreDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLSupplierDetail.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSLSupplierDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLSupplierDetail.vb">
+      <DependentUpon>DataSetSLSupplierDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLSupplierRekap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSLSupplierRekap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSLSupplierRekap.vb">
+      <DependentUpon>DataSetSLSupplierRekap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSO.vb">
+      <DependentUpon>DataSetSO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSOH.Designer.vb">
+      <DependentUpon>DataSetSOH.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DataSetSOHAll.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSOHAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSOHReady.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSOHReady.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTIToko.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTIToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTIToko.vb">
+      <DependentUpon>DataSetTIToko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetUPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetUPO.vb">
+      <DependentUpon>DataSetUPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSReturSupplier.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSReturSupplier.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtsNonRRAK.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsNonRRAK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtsNonRRAK.vb">
+      <DependentUpon>dtsNonRRAK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdjreason.Designer.vb">
+      <DependentUpon>FrmAdjreason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdjreason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdjustmentManual.Designer.vb">
+      <DependentUpon>FrmAdjustmentManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdjustmentManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfig.Designer.vb">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDraftPOGO.Designer.vb">
+      <DependentUpon>FrmDraftPOGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDraftPOGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDraftUPO.Designer.vb">
+      <DependentUpon>FrmDraftUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDraftUPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDSI.Designer.vb">
+      <DependentUpon>FrmDSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditUPO.Designer.vb">
+      <DependentUpon>FrmEditUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditUPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmError.Designer.vb">
+      <DependentUpon>FrmError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFind.Designer.vb">
+      <DependentUpon>FrmFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputSO.Designer.vb">
+      <DependentUpon>FrmInputSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInputSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInventoryMovementCabang.Designer.vb">
+      <DependentUpon>FrmInventoryMovementCabang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInventoryMovementCabang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJWKBKL.Designer.vb">
+      <DependentUpon>FrmJWKBKL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJWKBKL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJWKSupplierByDC.Designer.vb">
+      <DependentUpon>FrmJWKSupplierByDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJWKSupplierByDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJWKToko.Designer.vb">
+      <DependentUpon>FrmJWKToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJWKToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKunci.Designer.vb">
+      <DependentUpon>FrmKunci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKunci.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLockSO.Designer.vb">
+      <DependentUpon>FrmLockSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLockSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLPBReturSupplier.Designer.vb">
+      <DependentUpon>FrmLPBReturSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLPBReturSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLPBReturToko.Designer.vb">
+      <DependentUpon>FrmLPBReturToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLPBReturToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLpbSupplier.Designer.vb">
+      <DependentUpon>FrmLpbSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLpbSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterMaxDC.Designer.vb">
+      <DependentUpon>FrmMasterMaxDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterMaxDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterRak.Designer.vb">
+      <DependentUpon>FrmMasterRak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterRak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterShelving.Designer.vb">
+      <DependentUpon>FrmMasterShelving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterShelving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasterUser.Designer.vb">
+      <DependentUpon>FrmMasterUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasterUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuUtama.Designer.vb">
+      <DependentUpon>FrmMenuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMstMaxToko.Designer.vb">
+      <DependentUpon>FrmMstMaxToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMstMaxToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMutasiDCIn.Designer.vb">
+      <DependentUpon>FrmMutasiDCIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMutasiDCIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMutasiDcOut.Designer.vb">
+      <DependentUpon>FrmMutasiDcOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMutasiDcOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMutasiPaket.Designer.vb">
+      <DependentUpon>FrmMutasiPaket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMutasiPaket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMutasiStock.Designer.vb">
+      <DependentUpon>FrmMutasiStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMutasiStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNonRRAK.Designer.vb">
+      <DependentUpon>FrmNonRRAK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNonRRAK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotifToko.Designer.vb">
+      <DependentUpon>FrmNotifToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotifToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOOS.Designer.vb">
+      <DependentUpon>FrmOOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPBToko.Designer.vb">
+      <DependentUpon>FrmPBToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPBToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanogramDC.Designer.vb">
+      <DependentUpon>FrmPlanogramDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanogramDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPOBKL.Designer.vb">
+      <DependentUpon>FrmPOBKL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPOBKL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPOBKLToko.Designer.vb">
+      <DependentUpon>FrmPOBKLToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPOBKLToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPOManual.Designer.vb">
+      <DependentUpon>FrmPOManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPOManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPOOtomatis.Designer.vb">
+      <DependentUpon>FrmPOOtomatis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPOOtomatis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintKartuStok.Designer.vb">
+      <DependentUpon>FrmPrintKartuStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrintKartuStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrintReturSupplier.Designer.vb">
+      <DependentUpon>FrmPrintReturSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrintReturSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptTIToko.Designer.vb">
+      <DependentUpon>FrmRptTIToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptTIToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmpRPTStockDCToko.Designer.vb">
+      <DependentUpon>FrmpRPTStockDCToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmpRPTStockDCToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterCode.Designer.vb">
+      <DependentUpon>FrmRegisterCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterTOtoStore.Designer.vb">
+      <DependentUpon>FrmRegisterTOtoStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterTOtoStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptLogPatch.Designer.vb">
+      <DependentUpon>FrmRptLogPatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptLogPatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRPTSales.Designer.vb">
+      <DependentUpon>FrmRPTSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRPTSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptSODC.Designer.vb">
+      <DependentUpon>FrmRptSODC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptSODC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptSoToko.Designer.vb">
+      <DependentUpon>FrmRptSoToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptSoToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRRAK.Designer.vb">
+      <DependentUpon>FrmRRAK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRRAK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSJReturToko.Designer.vb">
+      <DependentUpon>FrmSJReturToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSJReturToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSLDCToStore.Designer.vb">
+      <DependentUpon>FrmSLDCToStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSLDCToStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSLSupplier.Designer.vb">
+      <DependentUpon>FrmSLSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSLSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockMovement.Designer.vb">
+      <DependentUpon>FrmStockMovement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockMovement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSumarynonrrak.Designer.vb">
+      <DependentUpon>frmSumarynonrrak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSumarynonrrak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTOfromPB.Designer.vb">
+      <DependentUpon>FrmTOfromPB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTOfromPB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTokoPOGO.Designer.vb">
+      <DependentUpon>FrmTokoPOGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTokoPOGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterLPMPDC.Designer.vb">
+      <DependentUpon>FrmRegisterLPMPDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterLPMPDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterLPMPToko.Designer.vb">
+      <DependentUpon>FrmRegisterLPMPToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterLPMPToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRekapUPO.Designer.vb">
+      <DependentUpon>FrmRekapUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapUPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTOManual.Designer.vb">
+      <DependentUpon>FrmTOManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTOManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTOmanualNonScanner.Designer.vb">
+      <DependentUpon>FrmTOmanualNonScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTOmanualNonScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferOut.Designer.vb">
+      <DependentUpon>FrmTransferOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransferOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnPaket.Designer.vb">
+      <DependentUpon>FrmUnPaket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnPaket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidasi.Designer.vb">
+      <DependentUpon>FrmValidasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExportXls.vb" />
+    <Compile Include="MdlPass.vb" />
+    <Compile Include="MdlTerbilang.vb" />
+    <Compile Include="MdlUpdate.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PublicMod.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInventoryMovementCabang.resx">
+      <DependentUpon>FrmInventoryMovementCabang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKunci.resx">
+      <DependentUpon>FrmKunci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMutasiDCIn.resx">
+      <DependentUpon>FrmMutasiDCIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMutasiDcOut.resx">
+      <DependentUpon>FrmMutasiDcOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNonRRAK.resx">
+      <DependentUpon>FrmNonRRAK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotifToko.resx">
+      <DependentUpon>FrmNotifToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPOManual.resx">
+      <DependentUpon>FrmPOManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPOOtomatis.resx">
+      <DependentUpon>FrmPOOtomatis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrintKartuStok.resx">
+      <DependentUpon>FrmPrintKartuStok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmpRPTStockDCToko.resx">
+      <DependentUpon>FrmpRPTStockDCToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptLogPatch.resx">
+      <DependentUpon>FrmRptLogPatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRPTSales.resx">
+      <DependentUpon>FrmRPTSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptSoToko.resx">
+      <DependentUpon>FrmRptSoToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptTIToko.resx">
+      <DependentUpon>FrmRptTIToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSJReturToko.resx">
+      <DependentUpon>FrmSJReturToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSumarynonrrak.resx">
+      <DependentUpon>frmSumarynonrrak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptKartuStok.rdlc" />
+    <EmbeddedResource Include="RptMoveCabang.rdlc" />
+    <EmbeddedResource Include="RptSOTokoDetailByToko.rdlc" />
+    <EmbeddedResource Include="RptRRAK.rdlc" />
+    <EmbeddedResource Include="RptCetakUlangPL.rdlc" />
+    <EmbeddedResource Include="RptDSIDetail.rdlc" />
+    <EmbeddedResource Include="RptLogPatch.rdlc" />
+    <EmbeddedResource Include="RptMutasiDCOut.rdlc" />
+    <EmbeddedResource Include="RptMutasiIN.rdlc" />
+    <EmbeddedResource Include="rptNonRRAK.rdlc" />
+    <EmbeddedResource Include="RptSalesDetail.rdlc" />
+    <EmbeddedResource Include="RptSalesDetailperStruk.rdlc" />
+    <EmbeddedResource Include="RptSalesRekap.rdlc" />
+    <EmbeddedResource Include="RptSOTokoDetail.rdlc" />
+    <EmbeddedResource Include="RptStockMoveBS.rdlc" />
+    <EmbeddedResource Include="FrmAdjreason.resx">
+      <DependentUpon>FrmAdjreason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdjustmentManual.resx">
+      <DependentUpon>FrmAdjustmentManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfig.resx">
+      <DependentUpon>FrmConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDraftPOGO.resx">
+      <DependentUpon>FrmDraftPOGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDraftUPO.resx">
+      <DependentUpon>FrmDraftUPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDSI.resx">
+      <DependentUpon>FrmDSI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditUPO.resx">
+      <DependentUpon>FrmEditUPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.resx">
+      <DependentUpon>FrmError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFind.resx">
+      <DependentUpon>FrmFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputSO.resx">
+      <DependentUpon>FrmInputSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJWKBKL.resx">
+      <DependentUpon>FrmJWKBKL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJWKSupplierByDC.resx">
+      <DependentUpon>FrmJWKSupplierByDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJWKToko.resx">
+      <DependentUpon>FrmJWKToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLockSO.resx">
+      <DependentUpon>FrmLockSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLPBReturSupplier.resx">
+      <DependentUpon>FrmLPBReturSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLPBReturToko.resx">
+      <DependentUpon>FrmLPBReturToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLpbSupplier.resx">
+      <DependentUpon>FrmLpbSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterMaxDC.resx">
+      <DependentUpon>FrmMasterMaxDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterRak.resx">
+      <DependentUpon>FrmMasterRak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterShelving.resx">
+      <DependentUpon>FrmMasterShelving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasterUser.resx">
+      <DependentUpon>FrmMasterUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuUtama.resx">
+      <DependentUpon>FrmMenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMstMaxToko.resx">
+      <DependentUpon>FrmMstMaxToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMutasiPaket.resx">
+      <DependentUpon>FrmMutasiPaket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMutasiStock.resx">
+      <DependentUpon>FrmMutasiStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOOS.resx">
+      <DependentUpon>FrmOOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPBToko.resx">
+      <DependentUpon>FrmPBToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanogramDC.resx">
+      <DependentUpon>FrmPlanogramDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPOBKL.resx">
+      <DependentUpon>FrmPOBKL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPOBKLToko.resx">
+      <DependentUpon>FrmPOBKLToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrintReturSupplier.resx">
+      <DependentUpon>FrmPrintReturSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterCode.resx">
+      <DependentUpon>FrmRegisterCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterTOtoStore.resx">
+      <DependentUpon>FrmRegisterTOtoStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptSODC.resx">
+      <DependentUpon>FrmRptSODC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRRAK.resx">
+      <DependentUpon>FrmRRAK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSLDCToStore.resx">
+      <DependentUpon>FrmSLDCToStore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSLSupplier.resx">
+      <DependentUpon>FrmSLSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockMovement.resx">
+      <DependentUpon>FrmStockMovement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTOfromPB.resx">
+      <DependentUpon>FrmTOfromPB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTokoPOGO.resx">
+      <DependentUpon>FrmTokoPOGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterLPMPDC.resx">
+      <DependentUpon>FrmRegisterLPMPDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterLPMPToko.resx">
+      <DependentUpon>FrmRegisterLPMPToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRekapUPO.resx">
+      <DependentUpon>FrmRekapUPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTOManual.resx">
+      <DependentUpon>FrmTOManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTOmanualNonScanner.resx">
+      <DependentUpon>FrmTOmanualNonScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferOut.resx">
+      <DependentUpon>FrmTransferOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnPaket.resx">
+      <DependentUpon>FrmUnPaket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidasi.resx">
+      <DependentUpon>FrmValidasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptBPB.rdlc" />
+    <EmbeddedResource Include="RptDraftUPO.rdlc" />
+    <EmbeddedResource Include="RptJWKBKL.rdlc" />
+    <EmbeddedResource Include="RptJWKBySupplier.rdlc" />
+    <EmbeddedResource Include="RptKKSO.rdlc" />
+    <EmbeddedResource Include="RptLPBDetail.rdlc" />
+    <EmbeddedResource Include="RptLPBRekap.rdlc" />
+    <EmbeddedResource Include="RptLPBReturToko.rdlc" />
+    <EmbeddedResource Include="RptLPBSupplier.rdlc" />
+    <EmbeddedResource Include="RptMaxToko.rdlc" />
+    <EmbeddedResource Include="RptMutasiStock.rdlc" />
+    <EmbeddedResource Include="rptNrbSupplier.rdlc" />
+    <EmbeddedResource Include="RptNRBSupplierDetail.rdlc" />
+    <EmbeddedResource Include="RptNRBSupplierRekap.rdlc" />
+    <EmbeddedResource Include="RptOOS.rdlc" />
+    <EmbeddedResource Include="RptPL.rdlc" />
+    <EmbeddedResource Include="RptPlanoDC.rdlc" />
+    <EmbeddedResource Include="RptPO.rdlc" />
+    <EmbeddedResource Include="RptPOBKL.rdlc" />
+    <EmbeddedResource Include="RptRegisterDetailReturToko.rdlc" />
+    <EmbeddedResource Include="RptRegisterRekapReturToko.rdlc" />
+    <EmbeddedResource Include="RptRegisterTORekap.rdlc" />
+    <EmbeddedResource Include="RptRekapPOBKL.rdlc" />
+    <EmbeddedResource Include="RptRekapUPO.rdlc" />
+    <EmbeddedResource Include="RptReturSupplierMonth.rdlc" />
+    <EmbeddedResource Include="RptSLDCToStoreDetail.rdlc" />
+    <EmbeddedResource Include="RptSLDCToStoreRekap.rdlc" />
+    <EmbeddedResource Include="RptSLSupplierDetail.rdlc" />
+    <EmbeddedResource Include="RptSLSupplierRekap.rdlc" />
+    <EmbeddedResource Include="RptSOAdj.rdlc" />
+    <EmbeddedResource Include="RptSODCDetail.rdlc" />
+    <EmbeddedResource Include="RptSODCRekap.rdlc" />
+    <EmbeddedResource Include="RptSOH.rdlc" />
+    <EmbeddedResource Include="RptSOHAll.rdlc" />
+    <EmbeddedResource Include="RptSOHReady.rdlc" />
+    <EmbeddedResource Include="RptRegisterTODetail.rdlc" />
+    <EmbeddedResource Include="RptStockMoveGS.rdlc" />
+    <EmbeddedResource Include="RptStockToko.rdlc" />
+    <EmbeddedResource Include="RptSumaryNonRRAK.rdlc" />
+    <EmbeddedResource Include="RptSumDetailRRAK.rdlc" />
+    <EmbeddedResource Include="RptSummaryRRAK.rdlc" />
+    <EmbeddedResource Include="RptSumNonRRAKDetail.rdlc" />
+    <EmbeddedResource Include="RptTIToko.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSetBKLToko.xsc">
+      <DependentUpon>DataSetBKLToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBKLToko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBKLToko.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetBKLToko.xss">
+      <DependentUpon>DataSetBKLToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDetailTO.xsc">
+      <DependentUpon>DataSetDetailTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDetailTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDetailTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetDetailTO.xss">
+      <DependentUpon>DataSetDetailTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDSI.xsc">
+      <DependentUpon>DataSetDSI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDSI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDSI.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetDSI.xss">
+      <DependentUpon>DataSetDSI.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetJWBBKL.xsc">
+      <DependentUpon>DataSetJWBBKL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetJWBBKL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetJWBBKL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetJWBBKL.xss">
+      <DependentUpon>DataSetJWBBKL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetJWKBySupplier.xsc">
+      <DependentUpon>DataSetJWKBySupplier.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetJWKBySupplier.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetJWKBySupplier1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetJWKBySupplier.xss">
+      <DependentUpon>DataSetJWKBySupplier.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetKartuStok.xsc">
+      <DependentUpon>DataSetKartuStok.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetKartuStok.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetKartuStok.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetKartuStok.xss">
+      <DependentUpon>DataSetKartuStok.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetKKSO.xsc">
+      <DependentUpon>DataSetKKSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetKKSO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetKKSO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetKKSO.xss">
+      <DependentUpon>DataSetKKSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLPBReturToko.xsc">
+      <DependentUpon>DataSetLPBReturToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLPBReturToko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLPBReturToko.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetLPBReturToko.xss">
+      <DependentUpon>DataSetLPBReturToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMoveCabang.xsc">
+      <DependentUpon>DataSetMoveCabang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMoveCabang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMoveCabang.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetMoveCabang.xss">
+      <DependentUpon>DataSetMoveCabang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMstMaxToko.xsc">
+      <DependentUpon>DataSetMstMaxToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMstMaxToko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMstMaxToko.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetMstMaxToko.xss">
+      <DependentUpon>DataSetMstMaxToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMutasi.xsc">
+      <DependentUpon>DataSetMutasi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMutasi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMutasi.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetMutasi.xss">
+      <DependentUpon>DataSetMutasi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNRBSupplier.xsc">
+      <DependentUpon>DataSetNRBSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNRBSupplier.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNRBSupplier.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetNRBSupplier.xss">
+      <DependentUpon>DataSetNRBSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNRBtoko.xsc">
+      <DependentUpon>DataSetNRBtoko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNRBtoko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNRBtoko.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetNRBtoko.xss">
+      <DependentUpon>DataSetNRBtoko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPL.xsc">
+      <DependentUpon>DataSetPL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetPL.xss">
+      <DependentUpon>DataSetPL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPlanoDC.xsc">
+      <DependentUpon>DataSetPlanoDC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPlanoDC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPlanoDC.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetPlanoDC.xss">
+      <DependentUpon>DataSetPlanoDC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPO.xsc">
+      <DependentUpon>DataSetPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetPO.xss">
+      <DependentUpon>DataSetPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRekapTO.xsc">
+      <DependentUpon>DataSetRekapTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRekapTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRekapTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetRekapTO.xss">
+      <DependentUpon>DataSetRekapTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRekapUPO.xsc">
+      <DependentUpon>DataSetRekapUPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRekapUPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRekapUPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetRekapUPO.xss">
+      <DependentUpon>DataSetRekapUPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLDCToStore.xsc">
+      <DependentUpon>DataSetSLDCToStore.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLDCToStore.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSLDCToStore.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSLDCToStore.xss">
+      <DependentUpon>DataSetSLDCToStore.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLDCToStoreDetail.xsc">
+      <DependentUpon>DataSetSLDCToStoreDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLDCToStoreDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSLDCToStoreDetail.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSLDCToStoreDetail.xss">
+      <DependentUpon>DataSetSLDCToStoreDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLSupplierDetail.xsc">
+      <DependentUpon>DataSetSLSupplierDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLSupplierDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSLSupplierDetail.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSLSupplierDetail.xss">
+      <DependentUpon>DataSetSLSupplierDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLSupplierRekap.xsc">
+      <DependentUpon>DataSetSLSupplierRekap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSLSupplierRekap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSLSupplierRekap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSLSupplierRekap.xss">
+      <DependentUpon>DataSetSLSupplierRekap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSO.xsc">
+      <DependentUpon>DataSetSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSO.xss">
+      <DependentUpon>DataSetSO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOH.xsc">
+      <DependentUpon>DataSetSOH.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSOH.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSOH.xss">
+      <DependentUpon>DataSetSOH.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOHAll.xsc">
+      <DependentUpon>DataSetSOHAll.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOHAll.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSOHAll.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSOHAll.xss">
+      <DependentUpon>DataSetSOHAll.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOHReady.xsc">
+      <DependentUpon>DataSetSOHReady.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSOHReady.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSOHReady.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetSOHReady.xss">
+      <DependentUpon>DataSetSOHReady.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTIToko.xsc">
+      <DependentUpon>DataSetTIToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTIToko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTIToko.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetTIToko.xss">
+      <DependentUpon>DataSetTIToko.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTO.xsc">
+      <DependentUpon>DataSetTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetTO.xss">
+      <DependentUpon>DataSetTO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUPO.xsc">
+      <DependentUpon>DataSetUPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetUPO.xss">
+      <DependentUpon>DataSetUPO.xsd</DependentUpon>
+    </None>
+    <None Include="DistributionApplicationSystem_TemporaryKey.pfx" />
+    <None Include="DSReturSupplier.xsc">
+      <DependentUpon>DSReturSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="DSReturSupplier.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReturSupplier.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DSReturSupplier.xss">
+      <DependentUpon>DSReturSupplier.xsd</DependentUpon>
+    </None>
+    <None Include="dtsNonRRAK.xsc">
+      <DependentUpon>dtsNonRRAK.xsd</DependentUpon>
+    </None>
+    <None Include="dtsNonRRAK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsNonRRAK.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dtsNonRRAK.xss">
+      <DependentUpon>dtsNonRRAK.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CRPEAuto">
+      <Guid>{66589670-8F68-11D0-AA69-00A0C9274B91}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Two-storied house SH.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

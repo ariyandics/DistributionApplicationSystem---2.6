@@ -1,0 +1,196 @@
+GO
+/****** Object:  StoredProcedure [dbo].[spTblNonRRAK]    Script Date: 10/12/2019 11:03:46 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+			
+CREATE procedure [dbo].[spTblNonRRAK]( @statusProses varchar(20), @NomorNonRRAK bigint,@KodeToko bigint,@nilaibaru as bigint,@kodecoa varchar(10),@namacoa varchar(100),@penanggungjawab varchar(30))
+			as
+			begin
+				set transaction isolation level read committed ; 
+				declare @nilaiheader bigint
+				declare @nilaiselsih bigint
+				declare @strnononrrak int
+				declare @stsdata int
+
+			   if @statusProses = 'Getstatus'
+			    begin
+						set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- ambil no nonrrak
+						select * from TblNonRRAKHeader
+						where KodeToko =@KodeToko  and NomerNonRRAK =@strnononrrak 
+			    end
+				else
+				if @statusProses = 'StatusAwal'
+					begin
+					declare @sts varchar(15)
+					set @sts = 'BELUM DI APPROVE'
+					
+						select convert(date,a.TglCreate) as TglCreate ,a.NoAliasNR,a.KodeToko,b.namaToko, @sts as StsRealisasi ,c.namadc from TblNonRRAKHeader a
+						inner join MstToko b on a.kodetoko=b.kodetoko
+						inner join MstDC c on a.iddc=c.iddc
+						where a.StatusRealisasi=2 order by a.TglCreate asc --and  a.KodeToko =@KodeToko  and a.NomerNonRRAK =@NomorNonRRAK 
+				end
+				else
+				if @statusProses = 'GetRealisasi'
+					begin
+					declare @totwads integer
+					declare @stsreal integer
+					
+					set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+
+					select @totwads = TotRealWADS, @stsreal =  Statusrealisasi from TblNonRRAKHeader where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+						if @totwads =0 and  @stsreal=2
+							begin	
+							select a.KodeCOA ,a.NamaCOA ,a.Keterangan,a.NilaiRealToko,a.NilaiRealToko,a.NilaiSelisih   from TblNonRRAKDetail a
+							inner join TblNonRRAKHeader b on a.NomerNonRRAK =b.NomerNonRRAK and a.KodeToko =b.KodeToko 
+							where a.KodeToko =@KodeToko and a.NomerNonRRAK=@strnononrrak
+							end
+						else
+							begin
+							set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+
+							select a.KodeCOA ,a.NamaCOA ,a.Keterangan,a.NilaiRealToko,a.NilaiRealWADS,a.NilaiSelisih   from TblNonRRAKDetail a
+							inner join TblNonRRAKHeader b on a.NomerNonRRAK =b.NomerNonRRAK and a.KodeToko =b.KodeToko 
+							where a.KodeToko =@KodeToko  and a.NomerNonRRAK =@strnononrrak
+						end
+				end
+				else
+				if @statusProses = 'EditData'
+						begin
+
+						set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+
+						select @nilaibaru
+						if @nilaibaru >0
+							begin
+								update  TblNonRRAKDetail
+								set NilaiRealWADS  =@nilaibaru 
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+								update TblNonRRAKDetail
+								set NilaiSelisih=(NilaiRealToko-NilaiRealWADS)
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+
+						
+								select @nilaiheader =	SUM( NilaiRealWADS ) from TblNonRRAKDetail
+								where KodeToko =@KodeToko and NomerNonRRAK =@strnononrrak --and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+								select @nilaiselsih =	SUM( NilaiSelisih ) from TblNonRRAKDetail
+								where KodeToko =@KodeToko and NomerNonRRAK =@strnononrrak --and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+								update TblNonRRAKHeader
+								set TotRealWADS  =@nilaiheader ,TotNilaiSelisih=@nilaiselsih
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+
+
+								--status save (1)
+								update TblNonRRAKHeader
+								set StatusData  =1  where KodeToko =@KodeToko  and NomerNonRRAK =@strnononrrak
+							end
+						end
+				else
+				if @statusProses = 'nilaitidakedit'
+						begin
+
+						set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+
+						select @nilaibaru
+						if @nilaibaru =0
+						begin
+						update  TblNonRRAKDetail
+						set NilaiRealWADS  =@nilaibaru 
+						where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+						update TblNonRRAKDetail
+						set NilaiSelisih=(NilaiRealToko-NilaiRealWADS)
+						where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+
+						
+						select @nilaiheader =	SUM( NilaiRealWADS ) from TblNonRRAKDetail
+						where KodeToko =@KodeToko and NomerNonRRAK =@strnononrrak --and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+						select @nilaiselsih =	SUM( NilaiSelisih ) from TblNonRRAKDetail
+						where KodeToko =@KodeToko and NomerNonRRAK =@strnononrrak --and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+						update TblNonRRAKHeader
+						set TotRealWADS  =@nilaiheader ,TotNilaiSelisih=@nilaiselsih
+						where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak 
+
+
+						--status save (1)
+						update TblNonRRAKHeader
+						set StatusData  =1 ,TglApproveWADS =GETDATE() where KodeToko =@KodeToko  and NomerNonRRAK =@strnononrrak
+						end
+			    end
+				else
+					if @statusProses = 'Approve'
+						begin
+						set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@namacoa) -- Ambil No NonRRAK
+
+							select @nilaibaru =	SUM( NilaiRealWADS ) from TblNonRRAKDetail where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+							if @nilaibaru =0
+							begin
+								update  TblNonRRAKDetail
+								set NilaiRealWADS  =NilaiRealToko 
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+								-- and KodeCOA =@kodecoa and NamaCOA =@namacoa 
+							end
+						
+					
+								--select @nilaiselsih =	SUM( NilaiSelisi ) from TblNonRRAKDetail
+								--where KodeToko =@KodeToko and NomerNonRRAK =@NomorNonRRAK
+								select @nilaiheader =	SUM( NilaiRealWADS ) from TblNonRRAKDetail
+								where KodeToko =@KodeToko and NomerNonRRAK =@strnononrrak
+								update TblNonRRAKHeader
+								set TotRealWADS  =@nilaiheader ,TotNilaiSelisih=@nilaiselsih
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+						
+								update TblNonRRAKDetail 
+								set NilaiSelisih=(NilaiRealToko-NilaiRealWADS)
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+								update TblNonRRAKHeader
+								set TotNilaiSelisih=(TotRealToko-TotRealWADS)
+								where KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak
+
+								declare @GetTglBikin date
+								set @GetTglBikin = (select tglcreate from TblNonRRAKHeader where KodeToko=@KodeToko and NomerNonRRAK=@strnononrrak)
+								if month(@GetTglBikin)<month(getdate())
+									begin
+
+										set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@namacoa) -- Ambil No NonRRAK
+
+										update TblNonRRAKHeader
+										set StatusRealisasi  =4 ,TglApproveWADS =GETDATE(),PenanggungJawab=@penanggungjawab where KodeToko =@KodeToko  and NomerNonRRAK =@strnononrrak
+									end
+								else
+									begin
+
+										set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@namacoa) -- Ambil No NonRRAK
+
+										update TblNonRRAKHeader
+										set StatusRealisasi  =3 ,TglApproveWADS =GETDATE(),PenanggungJawab=@penanggungjawab  where KodeToko =@KodeToko  and NomerNonRRAK =@strnononrrak
+									end
+						  
+
+							end
+							else
+						
+
+					if @statusProses = 'Print'
+					begin
+						set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+						set @stsdata= (select StatusData from TblNonRRAKHeader where  KodeToko =@KodeToko and  NomerNonRRAK =@strnononrrak)
+						if @stsdata is NULL
+						Select a.KodeCOA,a.NamaCOA,a.Keterangan,a.NilaiRealToko,(a.NilaiRealToko) as NilaiRealWADS ,a.NilaiSelisih,convert(date,b.TglCreate) as TglCreate from TblNonRRAKDetail a
+						inner join TblNonRRAKHeader b on a.NomerNonRRAK =b.NomerNonRRAK and a.KodeToko =b.KodeToko 
+						 where a.KodeToko =@KodeToko and  a.NomerNonRRAK =@strnononrrak
+						else
+						if @stsdata =1
+						Select a.KodeCOA,a.NamaCOA,a.Keterangan,a.NilaiRealToko,a.NilaiRealWADS,a.NilaiSelisih,convert(date,b.TglCreate) as TglCreate from TblNonRRAKDetail a
+						inner join TblNonRRAKHeader b on a.NomerNonRRAK =b.NomerNonRRAK and a.KodeToko =b.KodeToko 
+						 where a.KodeToko =@KodeToko and  a.NomerNonRRAK =@strnononrrak
+						end
+					else
+					if @statusProses = 'BulanAktif'
+					 begin
+						
+						--set @strnononrrak = (select NomerNonRRAK from TblNonRRAKHeader where NoAliasNR=@penanggungjawab) -- Ambil No NonRRAK
+						select convert(date,TglCreate) as TglCreate from TblNonRRAKHeader where  KodeToko =@KodeToko and  NoAliasNR =@penanggungjawab
+					 end
+				end

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetSLSupplierDetail" targetNamespace="http://tempuri.org/DataSetSLSupplierDetail.xsd" xmlns:mstns="http://tempuri.org/DataSetSLSupplierDetail.xsd" xmlns="http://tempuri.org/DataSetSLSupplierDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetSLSupplierDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetSLSupplierDetail" msprop:Generator_UserDSName="DataSetSLSupplierDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableSLSupplierDetail" msprop:Generator_TableClassName="DataTableSLSupplierDetailDataTable" msprop:Generator_TableVarName="tableDataTableSLSupplierDetail" msprop:Generator_TablePropName="DataTableSLSupplierDetail" msprop:Generator_RowDeletingName="DataTableSLSupplierDetailRowDeleting" msprop:Generator_RowChangingName="DataTableSLSupplierDetailRowChanging" msprop:Generator_RowEvHandlerName="DataTableSLSupplierDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableSLSupplierDetailRowDeleted" msprop:Generator_UserTableName="DataTableSLSupplierDetail" msprop:Generator_RowChangedName="DataTableSLSupplierDetailRowChanged" msprop:Generator_RowEvArgName="DataTableSLSupplierDetailRowChangeEvent" msprop:Generator_RowClassName="DataTableSLSupplierDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomorPo" msprop:Generator_ColumnVarNameInTable="columnnomorPo" msprop:Generator_ColumnPropNameInRow="nomorPo" msprop:Generator_ColumnPropNameInTable="nomorPoColumn" msprop:Generator_UserColumnName="nomorPo" type="xs:string" minOccurs="0" />
+              <xs:element name="tglPo" msprop:Generator_ColumnVarNameInTable="columntglPo" msprop:Generator_ColumnPropNameInRow="tglPo" msprop:Generator_ColumnPropNameInTable="tglPoColumn" msprop:Generator_UserColumnName="tglPo" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeSupplier" msprop:Generator_ColumnVarNameInTable="columnkodeSupplier" msprop:Generator_ColumnPropNameInRow="kodeSupplier" msprop:Generator_ColumnPropNameInTable="kodeSupplierColumn" msprop:Generator_UserColumnName="kodeSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="namaSupplier" msprop:Generator_ColumnVarNameInTable="columnnamaSupplier" msprop:Generator_ColumnPropNameInRow="namaSupplier" msprop:Generator_ColumnPropNameInTable="namaSupplierColumn" msprop:Generator_UserColumnName="namaSupplier" type="xs:string" minOccurs="0" />
+              <xs:element name="kodeProduk" msprop:Generator_ColumnVarNameInTable="columnkodeProduk" msprop:Generator_ColumnPropNameInRow="kodeProduk" msprop:Generator_ColumnPropNameInTable="kodeProdukColumn" msprop:Generator_UserColumnName="kodeProduk" type="xs:string" minOccurs="0" />
+              <xs:element name="namaPanjang" msprop:Generator_ColumnVarNameInTable="columnnamaPanjang" msprop:Generator_ColumnPropNameInRow="namaPanjang" msprop:Generator_ColumnPropNameInTable="namaPanjangColumn" msprop:Generator_UserColumnName="namaPanjang" type="xs:string" minOccurs="0" />
+              <xs:element name="qtyPo" msprop:Generator_ColumnVarNameInTable="columnqtyPo" msprop:Generator_ColumnPropNameInRow="qtyPo" msprop:Generator_ColumnPropNameInTable="qtyPoColumn" msprop:Generator_UserColumnName="qtyPo" type="xs:long" minOccurs="0" />
+              <xs:element name="subTotal" msprop:Generator_ColumnVarNameInTable="columnsubTotal" msprop:Generator_ColumnPropNameInRow="subTotal" msprop:Generator_ColumnPropNameInTable="subTotalColumn" msprop:Generator_UserColumnName="subTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtyLPB" msprop:Generator_ColumnVarNameInTable="columnqtyLPB" msprop:Generator_ColumnPropNameInRow="qtyLPB" msprop:Generator_ColumnPropNameInTable="qtyLPBColumn" msprop:Generator_UserColumnName="qtyLPB" type="xs:long" minOccurs="0" />
+              <xs:element name="TtlLPB" msprop:Generator_ColumnVarNameInTable="columnTtlLPB" msprop:Generator_ColumnPropNameInRow="TtlLPB" msprop:Generator_ColumnPropNameInTable="TtlLPBColumn" msprop:Generator_UserColumnName="TtlLPB" type="xs:decimal" minOccurs="0" />
+              <xs:element name="qtyp" msprop:Generator_ColumnVarNameInTable="columnqtyp" msprop:Generator_ColumnPropNameInRow="qtyp" msprop:Generator_ColumnPropNameInTable="qtypColumn" msprop:Generator_UserColumnName="qtyp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rpp" msprop:Generator_ColumnVarNameInTable="columnrpp" msprop:Generator_ColumnPropNameInRow="rpp" msprop:Generator_ColumnPropNameInTable="rppColumn" msprop:Generator_UserColumnName="rpp" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
